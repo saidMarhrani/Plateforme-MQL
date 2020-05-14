@@ -1,2 +1,4 @@
 # Plateforme-MQL
-Création de la première version static du site MQL
+Create first static version of MQL website
+
+1. first release, Navbar with Footer. 
