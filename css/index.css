@@ -1,0 +1,261 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    /* background-color: #f9f9f9; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container{
+    margin: 0px 100px;
+}
+
+.master-goal{
+    margin: 0 auto;
+    height: 650px;
+    transition: all .3s ease;
+}
+
+.master-title{
+    text-align: center;
+    padding-top: 10%;
+    /* margin: 0 auto; */
+    /* width: 250px; */
+    margin-bottom: 5%;
+    /* border-bottom: 3px dashed dimgray; */
+    padding-bottom: 3px;
+    border-bottom-left-radius: 1.5px;
+    border-bottom-right-radius: 1.5px;
+}
+
+.master-goal:hover{
+    background-color: /*#eae9e9*/ lightgoldenrodyellow;
+    opacity: 0.9;
+    transform: scale(1.015);
+}
+
+.master {
+    color: #10316b;
+    font-size: 60px;
+    font-weight: bolder;
+    /* letter-spacing: 8px; */
+    text-shadow: 5px 3px 10px darkgray;
+}
+
+.master-goal > .container > p {
+    line-height: 2;
+    margin-bottom: 50%;
+    word-spacing: 8px;
+    text-align: left;
+    font-size: 25px;
+}
+
+.mql{
+    color: #9d0b0b;
+    font-family: Goudy Old Style;
+    margin-left: 3px;
+    letter-spacing: 5px;
+}
+
+.training{
+    background-image: url('../images/success-2697951_1920.jpg');
+    position:relative; text-align:center; overflow:hidden;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    filter: alpha(opacity=40);
+    width: 100%;
+    height: 700px;
+    transition: all .3s ease;
+}
+
+.training:hover{
+    background-color: rgba(0, 0, 0, 0.099);
+    opacity: 0.9;
+    /* background-color: rgb(255, 255, 255, 0.2); */
+    transform: scale(1.015);
+    /* opacity: 0.08; */
+}
+
+.training-goal-title {
+    margin-top: 10%;
+    font-family: Trebuchet MS;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    text-shadow: 3px 5px 10px #293462;
+    width: 520px;
+    border-bottom: 5px solid darkred;
+    padding-bottom: 3px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.training-goal{
+    width: 460px;
+}
+
+.training-content{
+    background-image: url('../images/Java.jpg');
+    position:relative; text-align:center; overflow:hidden;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    filter: alpha(opacity=40);
+    width: 100%;
+    height: 700px;
+    transition: all .3s ease;
+}
+
+.training > .container > p {
+    text-shadow: 3px 5px 10px #293462;
+    margin-top: 10%;
+    font-size: 25px;
+    word-spacing: 5px;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    line-height: 2;
+}
+
+.steps{
+    margin-top: 5%;
+    height: 650px;
+}
+.step-title{
+    color: darkgreen;
+    border-bottom: none;
+    width: 800px;
+    margin-bottom: 5%;
+    text-shadow: none;
+    text-shadow: 1px 1px 5px darkgrey;
+}
+.steps > .container > p {
+    line-height: 2;
+    word-spacing: 8px;
+    text-align: left;
+    font-size: 25px;
+}
+
+.row{
+    display: inline-block;
+    position: relative;
+    /* float: left; */
+    margin-left: 20px;
+    margin-top: 7.5%;
+}
+.row > p {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 15px;
+}
+
+.step{
+    width: 170px;
+    height: 170px;
+}
+
+.numbers{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    float: right;
+    top: 0;
+}
+
+.flip-box {
+    display: inline-block;
+    margin-top: 8%;
+    background-color: transparent;
+    width: 280px;
+    height: 260px;
+    line-height: 1.5;
+    perspective: 1000px;
+}
+  
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    line-height: 1.5;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+  
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+    
+.flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+ 
+.flip-box-back {
+    background-color: #1d4d4f;
+    border-radius: 6px;
+    box-shadow: 3px 3px 10px #2b2b28 ;
+    color: white;
+    transform: rotateY(180deg);
+    padding: 15px;
+    text-align: left;
+    height: 300px;
+}
+
+.flip-box-back > p{
+    font-size: 14px;
+    margin-top:25px;
+}
+
+.partners-title{
+    padding-top: 15%;
+    padding-bottom: 5%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 5px 5px 12px darkgray;
+}
+
+.card{
+    display: inline-block;
+    margin-left: 30px;
+    padding-bottom: 10%;
+}
+
+#capgemini_logo{
+    width: 200px;
+    height: 40px;
+}
+
+#atos_logo{
+    width: 100px;
+    height: 40px;
+}
+
+#cgi_logo{
+    width: 80px;
+    height: 40px;
+}
+
+#umanis_logo{
+    width: 100px;
+    height: 70px;
+}
+#cegedim_logo{
+    width: 200px;
+    height: 100px;
+    position: relative;
+    top: 25px;
+    /* padding-top: 30px; */
+}
+#accenture_logo{
+    width: 140px;
+    height: 100px;
+    position: relative;
+    top: 15px;
+}
