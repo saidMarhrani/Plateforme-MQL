@@ -220,6 +220,10 @@ body {
     margin-top:25px;
 }
 
+.partners{
+    height: 450px;
+}
+
 .partners-title{
     padding-top: 7%;
     text-align: center;
@@ -239,7 +243,7 @@ body {
     display: inline-block;
     margin-left: 30px;
     margin-top: 3%;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
 }
 
 .card > img{
@@ -293,3 +297,25 @@ body {
     top: -5px;
     opacity: 0.7;
 }
+
+.see-more{
+    cursor: pointer;
+    margin: 0 auto;
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+    background-color: darkred;
+    color: white;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 3px;
+    transition: all .5s linear;
+}
+
+.see-more:hover{
+    background-color: transparent;
+    border: 2px solid darkred;
+    color: darkred;
+}
+
+
