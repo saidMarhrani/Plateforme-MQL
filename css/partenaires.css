@@ -135,7 +135,7 @@ body{
     font-size: 36px;
     word-spacing: 5px;
     color: #162447;
-    width: 550px;
+    width: 40%;
     border-bottom: 5px solid darkred;
     padding-bottom: 15px;
     border-bottom-left-radius: 2px;
@@ -166,38 +166,38 @@ body{
     box-shadow: 2px 5px 5px grey;
 }
 
-#java{
+.java{
     color: darkred;
     border: 1px solid darkred;
 }
-#java:hover{
+.java:hover{
     color: white;
     background-color: darkred;
 }
 
-#js{
+.js{
     color: rgb(184, 184, 7);
     border: 1px solid rgb(255, 255, 20);
 }
-#js:hover{
+.js:hover{
     color: black;
     background-color: rgb(255, 255, 20);
 }
 
-#devops{
+.devops{
     color: rgb(27, 148, 3);
     border: 1px solid rgb(47, 255, 20);
 }
-#devops:hover{
+.devops:hover{
     color: white;
     background-color: rgb(32, 189, 11);
 }
 
-#bd{
+.bd{
     color: rgb(3, 44, 156);
     border: 1px solid rgb(29, 4, 109);
 }
-#bd:hover{
+.bd:hover{
     color: white;
     background-color: rgb(1, 3, 102);
 }

@@ -8,8 +8,9 @@
     height: 30px;
 }
 .bar-menu{
-    background-color: maroon;
+    background-color: #343a40!important;
     text-align: center;
+    height: 90px;
 }
 .bar-menu ul{
     display: inline-flex;
@@ -34,7 +35,7 @@
 .bar-menu ul li:hover .sub-menu-1{
     display: block;
     position: absolute;
-    background-color: maroon;
+    background-color: #343a40!important;
     margin-top: 15px;
     margin-left: 15px;
 }
@@ -44,7 +45,8 @@
 }
 .bar-menu ul li:hover .sub-menu-1 ul li{
     width: 150px;
-    padding: 10px;
+    height: 80px;
+    padding: 5px;
     border-bottom: 1px dotted white;
     background: transparent;
     border-radius: 0;
@@ -55,6 +57,12 @@
 }
 .bar-menu ul li:hover .sub-menu-1 ul li a:hover{
     color: red;
+    padding-left: 30px;
+    -webkit-transition:padding 0.7s ease;
+    -moz-transition:padding 0.7s ease;
+    -o-transition:padding 0.7s ease;
+    transition:padding 0.7s ease;
+
 }
 
 /* fallback */
