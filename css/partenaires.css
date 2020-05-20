@@ -32,13 +32,13 @@ body{
 .societe{
     margin-bottom: 5%;
     border-radius: 10px;
-    box-shadow: 2px 2px 30px ghostwhite;
-    transition: transform 1s ease-in-out;
+    box-shadow: 5px 5px 10px ghostwhite;
+    transition: all 0.3s ease-in;
 }
 
 .societe:hover{
-    box-shadow: 2px 2px 5px darkgray;
-    transform: scale(1.05);
+    box-shadow: 5px 5px 30px darkgray;
+    transform: scale(1.01);
 }
 
 .societe .head-societe{
@@ -135,7 +135,7 @@ body{
     font-size: 36px;
     word-spacing: 5px;
     color: #162447;
-    width: 40%;
+    width: 26%;
     border-bottom: 5px solid darkred;
     padding-bottom: 15px;
     border-bottom-left-radius: 2px;

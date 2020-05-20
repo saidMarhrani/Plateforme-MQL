@@ -4,65 +4,97 @@
     box-sizing: border-box;
 }
 .bar-menu img{
+    position: relative;
     width: 60px;
     height: 30px;
 }
+
 .bar-menu{
     background-color: #343a40!important;
-    text-align: center;
-    height: 90px;
+    padding-left: 120px;
 }
 .bar-menu ul{
     display: inline-flex;
     list-style: none;
 }
 .bar-menu ul li{
-    width: 120px;
-    margin: 15px;
-    padding: 15px;
+    margin: 15px 15px 0px 25px;
+    position: relative;
+    transition: 0.3s ease-in-out;
 }
 .bar-menu ul li a{
     text-decoration: none;
     color: white;
 }
-.active, .bar-menu ul li:hover{
-    background-color:red;
-    border-radius: 3px;
+
+.bar-menu ul li .first-a-level:hover{
+    text-decoration: none;
+    color: white;
 }
+
+.first-a-level::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+    margin-bottom: 2px;
+    padding-bottom: 1px;
+    border-bottom-left-radius: 1.5px;
+    border-bottom-right-radius: 1.5px;
+}
+
+.first-a-level:hover::after {
+    width: 30%;
+}
+
+.active, .bar-menu ul li a:hover{
+    border-radius: 3px;
+    padding-top: 5px;
+}
+
 .sub-menu-1{
     display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 10px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 .bar-menu ul li:hover .sub-menu-1{
     display: block;
     position: absolute;
     background-color: #343a40!important;
-    margin-top: 15px;
-    margin-left: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 .bar-menu ul li:hover .sub-menu-1 ul{
     display: block;
-    margin: 10px;
+    /* padding: 5px; */
+    width: 300px;
 }
 .bar-menu ul li:hover .sub-menu-1 ul li{
-    width: 150px;
-    height: 80px;
-    padding: 5px;
-    border-bottom: 1px dotted white;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
     background: transparent;
+    position: relative;
     border-radius: 0;
     text-align: left;
 }
 .bar-menu ul li:hover .sub-menu-1 ul li:last-child{
     border-bottom: none;
 }
+.bar-menu ul li:hover .sub-menu-1 ul li a {
+    -webkit-transition:all 0.7s ease;
+    -moz-transition:all 0.7s ease;
+    -o-transition:all 0.7s ease;
+    transition:all 0.7s ease;
+}
 .bar-menu ul li:hover .sub-menu-1 ul li a:hover{
-    color: red;
-    padding-left: 30px;
-    -webkit-transition:padding 0.7s ease;
-    -moz-transition:padding 0.7s ease;
-    -o-transition:padding 0.7s ease;
-    transition:padding 0.7s ease;
-
+    color: #ffa34d;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-left: 10px;
 }
 
 /* fallback */
@@ -85,7 +117,6 @@
     white-space: nowrap;
     word-wrap: normal;
     direction: ltr;
-    /* -webkit-font-feature-settings: 'liga'; */
     -webkit-font-smoothing: antialiased;
 }
 
