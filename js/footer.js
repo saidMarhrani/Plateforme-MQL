@@ -62,7 +62,7 @@ document.write("\n" +
     "                <a href=\"#\"><img class=\"img-size lang\" src=\"../icons/twitter.png\" title=\"Twitter\" /></a>\n" +
     "                <a href=\"#\"><img class=\"img-size lang\" src=\"../icons/instagram.png\" title=\"Instagram\" /></a>\n" +
     "                <br />\n" +
-    "                <p>MQL &copy 2019 - 2021</p>\n" +
+    "                <p>MQL &copy 2020</p>\n" +
     "            </div>\n" +
     "        </div>\n" +
     "\n" +
