@@ -12,7 +12,7 @@ var laureatDb=[
     {
         id:2,
         firstName:"said",
-        lastName:"magrani",
+        lastName:"marhrani",
         promo:"2019-2021",
         ville:"settat",
         society:"sqli",
@@ -20,9 +20,9 @@ var laureatDb=[
         image:"peopl.png"
     },
     {
-        id:1,
-        firstName:"abdessamade",
-        lastName:"oukirce",
+        id:3,
+        firstName:"John",
+        lastName:"Doe",
         promo:"2019-2021",
         ville:"sefrou",
         society:"atos",
@@ -30,9 +30,9 @@ var laureatDb=[
         image:"peopl.png"
     },
     {
-        id:1,
-        firstName:"abdessamade",
-        lastName:"oukirce",
+        id:4,
+        firstName:"Mark",
+        lastName:"Smith",
         promo:"2019-2021",
         ville:"sefrou",
         society:"atos",
@@ -40,9 +40,9 @@ var laureatDb=[
         image:"peopl.png"
     },
     {
-        id:1,
-        firstName:"abdessamade",
-        lastName:"oukirce",
+        id:5,
+        firstName:"James",
+        lastName:"Bond",
         promo:"2019-2021",
         ville:"sefrou",
         society:"atos",
@@ -50,9 +50,9 @@ var laureatDb=[
         image:"peopl.png"
     },
     {
-        id:1,
-        firstName:"abdessamade",
-        lastName:"oukirce",
+        id:6,
+        firstName:"Jason",
+        lastName:"Stadham",
         promo:"2019-2021",
         ville:"sefrou",
         society:"atos",
@@ -60,9 +60,19 @@ var laureatDb=[
         image:"peopl.png"
     },
     {
-        id:1,
-        firstName:"abdessamade",
-        lastName:"oukirce",
+        id:7,
+        firstName:"Ahmad",
+        lastName:"Mohammed",
+        promo:"2019-2021",
+        ville:"sefrou",
+        society:"atos",
+        location:"maroc",
+        image:"peopl.png"
+    },
+    {
+        id:8,
+        firstName:"Ahmad",
+        lastName:"Mohammed",
         promo:"2019-2021",
         ville:"sefrou",
         society:"atos",

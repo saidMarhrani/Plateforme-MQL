@@ -70,9 +70,10 @@ body {
 }
 
 .laureats{
+    display: inline-block;
     border-radius: 5px;
     padding: 20px;
-    margin: 10px 0px 10px 20px;
+    margin: 10px 0px 10px 10px;
     border: 1px solid #ccc;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     transition: 0.3s ease-in-out;
@@ -84,7 +85,7 @@ body {
 
 .laureats, .laureats>div{
     display: inline-block;
-    padding-right: 35px;
+    padding-right: 20px;
 }
 
 .laureat-img{
