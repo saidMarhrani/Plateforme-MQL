@@ -18,7 +18,7 @@ body {
     text-align: right;
     padding-right: 20px;
     /* margin-left: 20px; */
-    color: #ccc;
+    color: rgb(153, 150, 150);
 }
 
 .select-style {
@@ -72,8 +72,8 @@ body {
 .laureats{
     display: inline-block;
     border-radius: 5px;
-    padding: 20px;
-    margin: 10px 0px 10px 10px;
+    padding: 15px;
+    margin: 10px 0px 10px 30px;
     border: 1px solid #ccc;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     transition: 0.3s ease-in-out;
@@ -83,21 +83,39 @@ body {
     transform: scale(1.001);
 }
 
-.laureats, .laureats>div{
-    display: inline-block;
+.laureats>div{
     padding-right: 20px;
+    margin: 0 auto;
+    width: 220px;
+    text-align: center;
 }
 
 .laureat-img{
-    display: inline-block;
+    padding-bottom: 10px;
 }
 .laureat-img > img {
-    width: 80px;
-    height: 80px;
+    margin: 0 auto;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
+    border: 3px solid rgba(245, 245, 245, 0.651);
 }
 
+.laureat-info{
+    line-height: 1.6;
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
 .laureat-info > h2{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.laureat-info > p{
+    font-size: 14px;
+    color: #4d4d4e;
+    line-height: 1.8;
+    /* text-align: justify; */
 }

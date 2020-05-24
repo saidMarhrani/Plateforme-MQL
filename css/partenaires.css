@@ -97,31 +97,34 @@ body{
 
 .societe-detail-second{
     display: inline-block;
-    width: 300px;
+    margin-left: 5px;
+    width: 260px;
 }
 
 .societe-detail-second > .number{
-    font-size: 45px;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
     position: relative;
     left: 20px;
 }
 .turn-over{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .societe-detail-second >  img{
     position: relative;
     float: right;
-    right: 60px;
-    width: 30px;
-    height: 30px;
+    top: 8px;
+    right: 50px;
+    width: 20px;
+    height: 20px;
 }
 
 .societe-detail-second > p{
     margin-top: 20px;
     text-align: center;
+    font-size: 18px;
     text-transform: uppercase;
     margin-bottom: 10%;
 }
@@ -144,7 +147,7 @@ body{
 }
 
 .dev-lang{
-    margin-left: 40px;
+    margin-left: 30px;
     display: inline-block;
     border: 1px solid darkviolet;
     padding: 10px 30px 30px 30px;

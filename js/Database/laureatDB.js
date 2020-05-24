@@ -6,7 +6,7 @@ var laureatDb=[
         promo:"2019-2021",
         ville:"sefrou",
         society:"atos",
-        image:"peopl.png"
+        image:"man_2.png"
 
     },
     {
@@ -17,7 +17,7 @@ var laureatDb=[
         ville:"settat",
         society:"sqli",
         location:"etranger",
-        image:"peopl.png"
+        image:"man.png"
     },
     {
         id:3,
@@ -27,7 +27,7 @@ var laureatDb=[
         ville:"sefrou",
         society:"atos",
         location:"etranger",
-        image:"peopl.png"
+        image:"man_2.png"
     },
     {
         id:4,
@@ -37,7 +37,7 @@ var laureatDb=[
         ville:"sefrou",
         society:"atos",
         location:"maroc",
-        image:"peopl.png"
+        image:"unknown_1.png"
     },
     {
         id:5,
@@ -47,7 +47,7 @@ var laureatDb=[
         ville:"sefrou",
         society:"atos",
         location:"maroc",
-        image:"peopl.png"
+        image:"man.png"
     },
     {
         id:6,
@@ -57,7 +57,7 @@ var laureatDb=[
         ville:"sefrou",
         society:"atos",
         location:"maroc",
-        image:"peopl.png"
+        image:"man.png"
     },
     {
         id:7,
@@ -67,7 +67,7 @@ var laureatDb=[
         ville:"sefrou",
         society:"atos",
         location:"maroc",
-        image:"peopl.png"
+        image:"man_2.png"
     },
     {
         id:8,
@@ -77,7 +77,7 @@ var laureatDb=[
         ville:"sefrou",
         society:"atos",
         location:"maroc",
-        image:"peopl.png"
+        image:"unknown_1.png"
     }
 
 ];

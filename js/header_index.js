@@ -1,7 +1,7 @@
 document.write(" <nav>\n" +
     "       <div class=\"bar-menu\">\n" +
     "           <ul>\n" +
-    "               <li><img src=\"../images/MQLTransaprent.png\" alt=\"logo\" style=\"width: 100px; height: 50px;\"></li>\n" +
+    "               <li><img src=\"images/MQLTransaprent.png\" alt=\"logo\" style=\"width: 100px; height: 50px;\"></li>\n" +
     "               <li><a class=\"first-a-level\" href=\"#\">Prérequis</a>\n" +
     "                <div class=\"sub-menu-1\">\n" +
     "                    <ul>\n" +
@@ -32,18 +32,18 @@ document.write(" <nav>\n" +
     "                       </ul>\n" +
     "                   </div>\n" +
     "               </li>\n" +
-    "               <li><a class=\"first-a-level\" href=\"partenaires.html\">Partenaires</a>\n" +
+    "               <li><a class=\"first-a-level\" href=\"html/partenaires.html\">Partenaires</a>\n" +
     "                   <div class=\"sub-menu-1\">\n" +
     "                       <ul>\n" +
-    "                           <li><a href=\"partenaires.html\">Capgemini</a></li>\n" +
-    "                           <li><a href=\"partenaires.html\">CGI</a></li>\n" +
-    "                           <li><a href=\"partenaires.html\">Atos</a></li>\n" +
-    "                           <li><a href=\"partenaires.html\">Umanis</a></li>\n" +
-    "                           <li><a href=\"partenaires.html\">SQLI</a></li>\n" +
+    "                           <li><a href=\"html/partenaires.html\">Capgemini</a></li>\n" +
+    "                           <li><a href=\"html/partenaires.html\">CGI</a></li>\n" +
+    "                           <li><a href=\"html/partenaires.html\">Atos</a></li>\n" +
+    "                           <li><a href=\"html/partenaires.html\">Umanis</a></li>\n" +
+    "                           <li><a href=\"html/partenaires.html\">SQLI</a></li>\n" +
     "                       </ul>\n" +
     "                   </div>\n" +
     "               </li>\n" +
-    "               <li><a class=\"first-a-level\" href=\"laureat.html\">Lauréats</a></li>\n" +
+    "               <li><a class=\"first-a-level\" href=\"html/laureats.html\">Lauréats</a></li>\n" +
     "           </ul>\n" +
     "       </div>\n" +
     "    </nav>\n" +

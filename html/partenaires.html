@@ -1,231 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Partenaires</title>
+    
+    <title>Les partenaires</title>
+   
     <link rel="stylesheet" href="../css/partenaires.css">
     <link rel="stylesheet" href="../css/footer.css" type="text/css"/>
     <link rel="stylesheet" href="../css/header.css">
+
     <script src="../js/Database/partenairesDB.js"></script>
+    <script src="../js/models/partenaire.js"></script>
     <script src="../js/services/partenairesService.js"></script>
     <script src="../js/views/partenaireComponent.js"></script>
     <script src="../js/partenaire.js"></script>
+
 </head>
 
-<body>
-<script src="../js/header.js"></script>
-<div class="head-page">
-    <img src="../images/partner.jpg" alt="partenaire">
-    <h1>Nos partenaire</h1>
-</div>
+<body onload="main()">
+    <script src="../js/header.js"></script>
+    <div class="head-page">
+        <img src="../images/partner.jpg" alt="partenaire">
+        <h1>Nos partenaire</h1>
+    </div>
+    <div id="allCards">
 
-<div class="societe container">
-    <div class="head-societe">
-        <img src="../images/cgiB.jpg" alt="CGI">
-        <p>CGI au Maroc accompagne les acteurs majeurs de secteurs d’activités tels que l’énergie, la grande
-            distribution,
-            l’aéronautique ou le secteur bancaire dans leurs projets de transformation numérique.</p>
     </div>
 
-    <div class="societe-Info">
-        <div class="societe-detail-second">
-            <img src="../icons/addon.png"/>
-            <p class="number">523</p>
-            <p> collaborateurs </p>
-        </div>
-        <div class="societe-detail-second">
-            <img src="../icons/addon.png"/>
-            <p class="number">100</p>
-            <p> Clients Actifs </p>
-        </div>
-        <div class="societe-detail-second">
-            <img src="../icons/addon.png"/>
-            <p class="number">20</p>
-            <p> Partenaires </p>
-        </div>
-        <div class="societe-detail-second">
-            <img src="../icons/addon.png"/>
-            <p class="number">180 <span class="turn-over">millions</span></p>
-            <p> chiffre d'affaire </p>
-        </div>
-    </div>
-    <div class="societe-dev-lang">
-        <p>Les technologies</p>
-        <div class="dev-lang dotnet" >
-            <p>.NET</p>
-        </div>
-        <div class="dev-lang java" >
-            <p>Java</p>
-        </div>
-        <div class="dev-lang js" >
-            <p>JavaScript</p>
-        </div>
-        <div class="dev-lang devops" >
-            <p>DevOps</p>
-        </div>
-        <div class="dev-lang bd" >
-            <p>Big Data</p>
-        </div>
-
-    </div>
-</div>
-
-<div class="societe container">
-    <div class="head-societe">
-        <p>Atos est la première entreprise du CAC40 à ancrer sa raison d’être dans ses statuts, marquant ainsi
-            l’identité, la vocation et l’essence profonde de la Société et renforçant par là-même son leadership auprès
-            de ses parties prenantes.</p>
-        <img src="../images/atosB.jpg" alt="Umanis">
-    </div>
-
-    <div class="societe-Info">
-        <div class="societe-detail-second">
-            <img src="../icons/addon.png"/>
-            <p class="number">110000</p>
-            <p> collaborateurs </p>
-        </div>
-        <div class="societe-detail-second">
-            <img src="../icons/addon.png"/>
-            <p class="number">100</p>
-            <p> Clients Actifs </p>
-        </div>
-        <div class="societe-detail-second">
-            <img src="../icons/addon.png"/>
-            <p class="number">25</p>
-            <p> Partenaires </p>
-        </div>
-        <div class="societe-detail-second">
-            <img src="../icons/addon.png"/>
-            <p class="number">6 862 <span class="turn-over">millions</span></p>
-            <p> chiffre d'affaire </p>
-        </div>
-    </div>
-
-    <div class="societe-dev-lang">
-        <p>Les technologies</p>
-        <div class="dev-lang dotnet">
-            <p>.NET</p>
-        </div>
-        <div class="dev-lang java" >
-            <p>Java</p>
-        </div>
-        <div class="dev-lang js">
-            <p>JavaScript</p>
-        </div>
-        <div class="dev-lang devops">
-            <p>DevOps</p>
-        </div>
-        <div class="dev-lang bd" >
-            <p>Big Data</p>
-        </div>
-    </div>
-
-</div>
-<div class="societe container">
-    <div class="head-societe">
-        <img src="../images/CapgeminiB.jpg" alt="Capgemini">
-        <p>Capgemini est un leader mondial du conseil, de la transformation numérique, des services technologiques et
-            d’ingénierie. A la pointe de l’innovation, le Groupe aide ses clients à saisir l’ensemble des opportunités
-            que présentent le cloud, le digital et les plateformes..</p>
-    </div>
-
-    <div class="societe-Info">
-        <div class="societe-detail-second">
-            <img src="../icons/addon.png"/>
-            <p class="number">270 000</p>
-            <p> collaborateurs </p>
-        </div>
-        <div class="societe-detail-second">
-            <img src="../icons/addon.png"/>
-            <p class="number">100</p>
-            <p> Clients Actifs </p>
-        </div>
-        <div class="societe-detail-second">
-            <img src="../icons/addon.png"/>
-            <p class="number">23</p>
-            <p> Partenaires </p>
-        </div>
-        <div class="societe-detail-second">
-            <img src="../icons/addon.png"/>
-            <p class="number">17 <span class="turn-over">milliards</span></p>
-            <p> chiffre d'affaire </p>
-        </div>
-    </div>
-    <div class="societe-dev-lang">
-        <p>Les technologies</p>
-        <div class="dev-lang dotnet" >
-            <p>.NET</p>
-        </div>
-        <div class="dev-lang java" >
-            <p>Java</p>
-        </div>
-        <div class="dev-lang js" >
-            <p>JavaScript</p>
-        </div>
-        <div class="dev-lang devops" >
-            <p>DevOps</p>
-        </div>
-        <div class="dev-lang bd" >
-            <p>Big Data</p>
-        </div>
-
-    </div>
-</div>
-
-<div class="societe container">
-    <div class="head-societe">
-        <p>Umanis est le leader Français en Data, Business Solutions et Digital. Excellence, responsabilité, respect et
-            convivialité sont les valeurs qui nous animent au quotidien. Elles sont le socle de notre culture et le
-            ciment de notre engagement envers vous dans la réussite de vos projets. Et cela fait plus de 25 ans que ça
-            dure.</p>
-        <img src="../images/UmanisB.jpg" alt="Umanis">
-    </div>
-
-    <div class="societe-Info">
-        <div class="societe-detail-second">
-            <img src="../icons/addon.png"/>
-            <p class="number">27000</p>
-            <p> collaborateurs </p>
-        </div>
-        <div class="societe-detail-second">
-            <img src="../icons/addon.png"/>
-            <p class="number">100</p>
-            <p> Clients Actifs </p>
-        </div>
-        <div class="societe-detail-second">
-            <img src="../icons/addon.png"/>
-            <p class="number">21</p>
-            <p> Partenaires </p>
-        </div>
-        <div class="societe-detail-second">
-            <img src="../icons/addon.png"/>
-            <p class="number">200 <span class="turn-over">millions</span></p>
-            <p> chiffre d'affaire </p>
-        </div>
-    </div>
-    <div class="societe-dev-lang">
-        <p>les technologies</p>
-        <div class="dev-lang dotnet" >
-            <p>.NET</p>
-        </div>
-        <div class="dev-lang java" >
-            <p>Java</p>
-        </div>
-        <div class="dev-lang js" >
-            <p>JavaScript</p>
-        </div>
-        <div class="dev-lang devops" >
-            <p>DevOps</p>
-        </div>
-        <div class="dev-lang bd" >
-            <p>Big Data</p>
-        </div>
-
-    </div>
-</div>
-
-<script src="../js/footer.js"></script>
+    <script src="../js/footer.js"></script>
 </body>
-
 </html>
