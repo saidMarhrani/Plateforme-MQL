@@ -5,7 +5,8 @@ var laureatDb=[
         lastName:"oukirce",
         promo:"2019-2021",
         ville:"sefrou",
-        society:"atos",
+        society:"Capgemini",
+        location:"etranger",
         image:"man_2.png"
 
     },
@@ -13,9 +14,9 @@ var laureatDb=[
         id:2,
         firstName:"said",
         lastName:"marhrani",
-        promo:"2019-2021",
+        promo:"2017-2019",
         ville:"settat",
-        society:"sqli",
+        society:"CGI FES",
         location:"etranger",
         image:"man.png"
     },
@@ -23,9 +24,9 @@ var laureatDb=[
         id:3,
         firstName:"John",
         lastName:"Doe",
-        promo:"2019-2021",
+        promo:"2013-2015",
         ville:"sefrou",
-        society:"atos",
+        society:"Atos",
         location:"etranger",
         image:"man_2.png"
     },
@@ -35,8 +36,8 @@ var laureatDb=[
         lastName:"Smith",
         promo:"2019-2021",
         ville:"sefrou",
-        society:"atos",
-        location:"maroc",
+        society:"Umanis",
+        location:"Maroc",
         image:"unknown_1.png"
     },
     {
@@ -45,8 +46,8 @@ var laureatDb=[
         lastName:"Bond",
         promo:"2019-2021",
         ville:"sefrou",
-        society:"atos",
-        location:"maroc",
+        society:"Atos",
+        location:"Maroc",
         image:"man.png"
     },
     {
@@ -56,7 +57,7 @@ var laureatDb=[
         promo:"2019-2021",
         ville:"sefrou",
         society:"atos",
-        location:"maroc",
+        location:"Maroc",
         image:"man.png"
     },
     {

@@ -1,6 +1,15 @@
 function LaureatComponent(service) {
     this.service=service;
     this.body = document.getElementById("allAureats");
+    this.promoElement = this.get("promo");
+    this.societyElement = this.get("society");
+    this.locaElement = this.get("location");
+}
+
+LaureatComponent.prototype.get = function(className)
+{
+    var element = document.getElementsByClassName(className)[0];
+    return element;
 }
 
 LaureatComponent.prototype.buildElement = function (name,content,className,src,attributes,values) {
@@ -11,10 +20,8 @@ LaureatComponent.prototype.buildElement = function (name,content,className,src,a
     }
     if(attributes!==undefined)
     {
-        console.log("if");
         for(var i in attributes)
         {
-            console.log("boucl");
             element.setAttribute(attributes[i],values[i]);
         }
     }
@@ -33,18 +40,20 @@ LaureatComponent.prototype.buildElement = function (name,content,className,src,a
     // }
     return element;
 };
-LaureatComponent.prototype.buildSelectElement = function(name,...options)
+LaureatComponent.prototype.buildSelectElement = function(name,className,...options)
 {
-
     var divSelectElement = this.buildElement("div",undefined,"select-style inline");
-    var selectElement = this.buildElement(name);
+    var selectElement = this.buildElement(name,undefined,className);
+
+
     for(var i in options)
     {
 
-        var atts = ["value"];
+        var attributes = ["value"];
         var values = [options[i]];
-        var optionElement = this.buildElement("option",options[i],atts,values);
+        var optionElement = this.buildElement("option",options[i],undefined,undefined,attributes,values);
         selectElement.appendChild(optionElement);
+        selectElement.addEventListener("onchange",this.filterByPromo);
     }
     divSelectElement.appendChild(selectElement);
     return divSelectElement;
@@ -52,9 +61,9 @@ LaureatComponent.prototype.buildSelectElement = function(name,...options)
 
 LaureatComponent.prototype.buildFirstContainer = function () {
     var containerDiv = this.buildElement("div",undefined,"container");
-    var promoSelectDiv = this.buildSelectElement("select","2020","2019","2018","2017");
-    var locaSelectDiv = this.buildSelectElement("select","Maroc","Etranger");
-    var societySelectDiv = this.buildSelectElement("select","Société","Capgemini","CGI FES","ATOS","Umanis"
+    var promoSelectDiv = this.buildSelectElement("select","promo","Promotion","2019-2021","2017-2019","2015-2017","2013-2015");
+    var locaSelectDiv = this.buildSelectElement("select","location","Lieu","Maroc","Etranger");
+        var societySelectDiv = this.buildSelectElement("select","society","Société","Capgemini","CGI FES","Atos","Umanis"
                         ,"Cegedime","Accenture","SQLI");
     var nbLaureat = this.service.getSize();
     var numberDiv = this.buildElement("div",undefined,"persons-number");
@@ -66,6 +75,8 @@ LaureatComponent.prototype.buildFirstContainer = function () {
     containerDiv.appendChild(societySelectDiv);
     containerDiv.appendChild(numberDiv);
     this.body.appendChild(containerDiv);
+    var element = document.getElementsByClassName("promo")[0];
+    //element.addEventListener("onchange",this.filterByPromo(element.value));
 };
 
 LaureatComponent.prototype.buildLaureatDiv = function (laureat) {
@@ -102,6 +113,7 @@ LaureatComponent.prototype.buildLaureatDiv = function (laureat) {
 
 }
 LaureatComponent.prototype.buildSecondContainer = function () {
+
     var laureatsDiv = this.buildElement("div",undefined,"container second");
     for(var i in this.service.laureats)
     {
@@ -124,17 +136,53 @@ LaureatComponent.prototype.buildAll = function () {
     // }
 
 }
-LaureatComponent.prototype.clearData = function(){
-
-}
-
-LaureatComponent.prototype.filterBySociety = function () {
-    this.service.filterBySociety("atos");
-    console.log(this.service.laureats);
+LaureatComponent.prototype.updateSecondContainer = function(){
     var divContainer = document.getElementsByClassName("container second")[0];
     var number = document.getElementsByClassName("nbLaureat")[0];
     number.innerHTML = this.service.getSize()+" personnes trouvées";
-    divContainer.remove();
+    if(divContainer!==undefined)
+    {
+        divContainer.remove();
+    }
     this.buildSecondContainer();
+}
 
+LaureatComponent.prototype.filterBySociety = function (society) {
+    console.log( this.service.laureats);
+    this.service.setLaureats(this.service.filterBySociety(society));
+    this.updateSecondContainer();
+    console.log( this.service.laureats);
+}
+LaureatComponent.prototype.filterByPromo = function (promo) {
+
+    // var tab=["Promotion","Lieu","Société"];
+    // if(promo=="Promotion")
+    // {
+    //     this.filterByPromo(this.value);
+    // }
+    // else if(tab.includes(element2.value) )
+    // {
+    //     console.log("je suis entreer");
+    //     this.service.load();
+    //     this.updateSecondContainer();
+    // }
+    // else
+    // {
+    //     this.service.laureats = JSON.parse(sessionStorage.getItem("allLaureat"));
+    //     console.log(this.service.laureats);
+    //     this.updateSecondContainer();
+    // }
+    // this.service.filterByPromo(promo);
+    // this.updateSecondContainer();
+    console.log( this.service.laureats);
+    this.service.setLaureats(this.service.filterByPromo(promo));
+    this.updateSecondContainer();
+    console.log( this.service.laureats);
+
+}
+LaureatComponent.prototype.filterByLocation = function (location) {
+    console.log( this.service.laureats);
+    this.service.laureats=this.service.filterByLocation(location);
+    this.updateSecondContainer();
+    console.log( this.service.laureats);
 }
