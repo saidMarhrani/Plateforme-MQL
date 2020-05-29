@@ -15,3 +15,17 @@ eventService.prototype.load = function () {
         )
     }
 }
+eventService.prototype.filterByCategorie = function (cat) {
+
+    console.log(cat);
+    this.load();
+    if(cat!="Catégorie")
+    {
+        console.log(this.trainings);
+        this.events = this.events.filter(function (event) {
+            return event.cat.toLowerCase() == cat.toLowerCase();
+        });
+    }
+
+    return this.events;
+};
