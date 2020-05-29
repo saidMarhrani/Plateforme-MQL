@@ -2,6 +2,8 @@ function trainingComponent(service)
 {
     this.service = service;
     this.container = document.getElementsByClassName("container")[0];
+
+
 }
 
 trainingComponent.prototype.buildElement = function (name,className,content,attributes,values) {
@@ -32,10 +34,10 @@ trainingComponent.prototype.buildElement = function (name,className,content,attr
     // }
     return element;
 };
-trainingComponent.prototype.buildSelectElement = function(className,...options)
+trainingComponent.prototype.buildSelectElement = function(classNameDiv,selectClassName,...options)
 {
-    var divSelectElement = this.buildElement("div","select-style inline");
-    var selectElement = this.buildElement("select");
+    var divSelectElement = this.buildElement("div",classNameDiv);
+    var selectElement = this.buildElement("select",selectClassName);
     for(var i in options)
     {
         var attributes = ["value"];
@@ -71,8 +73,8 @@ trainingComponent.prototype.buildForm = function () {
     var divSearchCity = this.buildSerachCity();
     formElement.appendChild(divSearchCity);
 
-    var selectElemnt1 = this.buildSelectElement("select-style inline","Tri par","Pertinence","Date","Salaire");
-    var selectElemnt2 = this.buildSelectElement("select-style inline","Type de contrat","CDI","CDD","Stage");
+    var selectElemnt1 = this.buildSelectElement("select-style inline","trie","Tri par","Date","Salaire");
+    var selectElemnt2 = this.buildSelectElement("select-style inline","contrat","Type de contrat","CDI","CDD","Stage");
     var selectElemnt3 = this.buildSelectElement("select-style inline","society","Société","Capgemini","CGI FES","Atos","Umanis"
         ,"Cegedime","Accenture","SQLI");
     formElement.appendChild(selectElemnt1);
@@ -126,7 +128,7 @@ trainingComponent.prototype.buildEmailCard = function () {
     cardDiv.appendChild(pElement);
     cardDiv.appendChild(divForm);
     cardDiv.appendChild(pElement3);
-    return cardDiv;
+    return cardDiv
 }
 trainingComponent.prototype.buildAllTraining = function () {
     var divTrainings = this.buildElement("div","trainings");
@@ -144,8 +146,35 @@ trainingComponent.prototype.buildAllTraining = function () {
 trainingComponent.prototype.buildAll = function () {
     var divTrainings = this.buildAllTraining();
     var email = this.buildEmailCard();
-    var all = this.buildElement("div","inline");
+    var all = this.buildElement("div","inline all");
     all.appendChild(divTrainings);
     all.appendChild(email);
     this.container.appendChild(all);
+}
+trainingComponent.prototype.trieComponent = function(trie){
+    console.log("dddd"+trie);
+    this.service.trier(trie);
+    this.updateTrainings();
+}
+trainingComponent.prototype.updateTrainings = function () {
+    var divElement = document.getElementsByClassName("all")[0];
+    console.log(divElement);
+    if(divElement!==undefined)
+    {
+        console.log("ccccc");
+        divElement.remove();
+    }
+    this.buildAll();
+}
+trainingComponent.prototype.filterByContratComponent = function (contraType) {
+    this.service.filterByContrat(contraType);
+    this.updateTrainings();
+}
+trainingComponent.prototype.filterBySocietyComponent = function (society) {
+    this.service.filterBySociety(society);
+    this.updateTrainings();
+}
+trainingComponent.prototype.filterByCityComponent = function (city) {
+    this.service.filterByCity(city);
+    this.updateTrainings();
 }
