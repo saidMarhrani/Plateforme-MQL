@@ -30,10 +30,10 @@ eventComponent.prototype.buildElement = function (name,className,content,attribu
     // }
     return element;
 };
-eventComponent.prototype.buildSelectElement = function(className,...options)
+eventComponent.prototype.buildSelectElement = function(className,selectClassName,...options)
 {
-    var divSelectElement = this.buildElement("div","select-style inline");
-    var selectElement = this.buildElement("select");
+    var divSelectElement = this.buildElement("div",className);
+    var selectElement = this.buildElement("select",selectClassName);
 
 
     for(var i in options)
@@ -62,7 +62,7 @@ eventComponent.prototype.buildForm = function () {
     var formElement = this.buildElement("form");
     var inputDiv = this.buildInput("date from","De","date");
     var inputDiv2 = this.buildInput("date to","A","date");
-    var selectElement = this.buildSelectElement("select-style","Catégorie","Compagne de stage","Tests psychotechniques"
+    var selectElement = this.buildSelectElement("select-style inline","catSelect","Catégorie","Compagne de stage","Tests psychotechniques"
     ,"Tests Techniques","Entretiens","Remise des Diplomes");
     formElement.appendChild(inputDiv);
     formElement.appendChild(inputDiv2);
@@ -81,7 +81,7 @@ eventComponent.prototype.buildEventCard = function (event) {
     var spanElement = this.buildElement("span","date-event");
     var spanImg = this.buildElement("img","icon-event",undefined,["src"],["../icons/calendar.png"]);
 
-    var date = document.createTextNode(event.date);
+    var date = document.createTextNode(event.date.getDay()+"-"+event.date.getMonth()+"-"+event.date.getFullYear());
     spanElement.appendChild(spanImg);
     spanElement.appendChild(date);
 
@@ -106,7 +106,18 @@ eventComponent.prototype.buildEvents = function () {
     }
     this.container.appendChild(divEvents);
 }
-
+eventComponent.prototype.updateEvents = function () {
+    var eventsDiv = document.getElementsByClassName("events")[0];
+    if(eventsDiv!==undefined)
+    {
+        eventsDiv.remove();
+        this.buildEvents();
+    }
+}
+eventComponent.prototype.filterByCatComponent = function (cat) {
+    this.service.filterByCategorie(cat);
+    this.updateEvents();
+}
 
 
 

@@ -163,8 +163,9 @@ trainingComponent.prototype.updateTrainings = function () {
     {
         console.log("ccccc");
         divElement.remove();
+        this.buildAll();
     }
-    this.buildAll();
+    //this.buildAll();
 }
 trainingComponent.prototype.filterByContratComponent = function (contraType) {
     this.service.filterByContrat(contraType);
