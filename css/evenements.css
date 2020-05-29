@@ -289,3 +289,23 @@ body {
     top: 3px;
 }
 
+.search-btn{
+
+  background: rgb(4, 51, 92);
+  color: #fff;
+  font-family: Sans-serif;
+  font-size: 12px;
+  height: 35px;
+  width: 100px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 5px;
+  border: 0;
+  transition: all 0.3s ease 0s;
+}
+
+.search-btn:hover {
+  box-shadow: 1px 1px 5px rgb(16, 24, 141);
+  opacity: 0.9;
+}
+
