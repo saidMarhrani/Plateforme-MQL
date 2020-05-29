@@ -59,7 +59,7 @@ PartenaireComponent.prototype.buildStaticDiv = function(staticNumber,staticName)
 {
     var pNumber
     var staticImage = "../icons/addon.png";
-    if(staticName=="chifres d'ffaire")
+    if(staticName=="chiffre d'affaire")
         pNumber= this.buildElement("p","number",undefined,staticNumber+" "+'<span class="turn-over">millions</span>');
     else
         pNumber= this.buildElement("p","number",undefined,staticNumber);
@@ -77,7 +77,7 @@ PartenaireComponent.prototype.buildStaticDiv = function(staticNumber,staticName)
     return divCol;
 }
 PartenaireComponent.prototype.buildCardBody = function (...args) {
-    var staticNames = ["collaborateur","clients active","partenaires","chifres d'ffaire"];
+    var staticNames = ["collaborateur","clients active","partenaires","chiffre d'affaire"];
     var bodyDive = this.buildElement("div","societe-info");
     for(var i in args)
     {

@@ -2,14 +2,14 @@ document.write(`<nav>
            <div class=bar-menu>
                <ul>
                    <li><a href="index.html"><img src="images/MQLTransaprent.png" alt="logo" style="width: 100px; height: 50px;"></li>
-                   <li><a class="first-a-level" href="#">Prérequis</a>
+                   <!--<li><a class="first-a-level" href="#">Prérequis</a>
                     <div class="sub-menu-1">
                         <ul>
                             <li><a href="#">Profils sélectionnés</a></li>
                             <li><a href="#">Qualités nécessaires</a></li>
                         </ul>
                     </div>
-                   </li>
+                   </li>-->
                    <li><a class="first-a-level" href="html/activite.html">Activités</a>
                        <div class="sub-menu-1">
                            <ul>

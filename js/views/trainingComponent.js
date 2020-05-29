@@ -90,9 +90,9 @@ trainingComponent.prototype.buildTrainingCard = function (training) {
     var trainigDiv = this.buildElement("div","training-notif");
     var divSup = this.buildElement("div");
     var h2Title = this.buildElement("h2","training-title",training.title);
-    var pCity =  this.buildElement("p","training-city training-title",training.city);
-    var pdesc =  this.buildElement("p","training-desc training-title",training.desc);
-    var pDate =  this.buildElement("p","training-city training-title",training.date);
+    var pCity =  this.buildElement("p","training-city training-city",training.city);
+    var pdesc =  this.buildElement("p","training-desc training-desc",training.desc);
+    var pDate =  this.buildElement("p","training-city training-date",training.date);
 
     divSup.appendChild(h2Title);
     divSup.appendChild(pCity);
@@ -140,6 +140,7 @@ trainingComponent.prototype.buildAllTraining = function () {
     return divTrainings;
     //this.container.app
 }
+
 trainingComponent.prototype.buildAll = function () {
     var divTrainings = this.buildAllTraining();
     var email = this.buildEmailCard();
@@ -148,16 +149,3 @@ trainingComponent.prototype.buildAll = function () {
     all.appendChild(email);
     this.container.appendChild(all);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

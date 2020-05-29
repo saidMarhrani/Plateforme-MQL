@@ -80,7 +80,7 @@ LaureatComponent.prototype.buildFirstContainer = function () {
 };
 
 LaureatComponent.prototype.buildLaureatDiv = function (laureat) {
-    var imgUrl = "../icons/";
+    var imgUrl = "../images/laureats/";
     var imgElement = this.buildElement("img",undefined,undefined,imgUrl +laureat.image);
     var imgDiv = this.buildElement("div",undefined,"laureat-img");
     var h2Element = this.buildElement("h2",laureat.lastName+" "+laureat.firstName);

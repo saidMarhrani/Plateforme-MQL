@@ -3,143 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stage pré-embauche</title>
+    <title>Title</title>
     <link rel="stylesheet" href="../css/footer.css" type="text/css" />
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/training.css" />
+    <script src="../js/Database/trainingDB.js"></script>
+    <script src="../js/models/training.js"></script>
+    <script src="../js/services/trainingService.js"></script>
+    <script src="../js/views/trainingComponent.js"></script>
+    <script src="../js/trainingMain.js"></script>
 </head>
 
-<body>
-
+<body onload="main()">
     <script src="../js/header.js"></script>
-
     <div class="container">
-
-        <div class="form">
-            <form>
-                <div class="search-city">
-                    <p id="where">Où</p>
-                    <p id="city">Ville ou région</p>
-                    <input type="text" class="input-city" required />
-                    <img class="map-icon" src="../icons/maps-and-flags (2).png" width="15px" height="15px" />
-                    <button class="search-btn">Rechercher</button>
-                </div>
-
-                <div class="select-style inline">
-                    <select>
-                        <option value="#">Tri par</option>
-                        <option value="pertinence">Pertinence</option>
-                        <option value="date">Date</option>
-                        <option value="salaire">Salaire</option>
-                    </select>
-                </div>
-
-                <div class="select-style inline">
-                    <select>
-                        <option value="#">Type de contrat</option>
-                        <option value="etranger">CDI</option>
-                        <option value="etranger">CDD</option>
-                        <option value="etranger">Stage</option>
-                    </select>
-                </div>
-
-                <div class="select-style inline">
-                    <select>
-                        <option value="#">Société</option>
-                        <option value="capgemini">Capgemini</option>
-                        <option value="cgi">CGI FES</option>
-                        <option value="atos">ATOS</option>
-                        <option value="umanis">Umanis</option>
-                        <option value="cegedime">Cegedime</option>
-                        <option value="accenture">Accenture</option>
-                        <option value="sqli">SQLI</option>
-                    </select>
-                </div>
-
-            </form>
-        </div>
-
-        <hr style="background-color: #ccc; color: #ccc" />
-
-        <div class="inline">
-            <div class="trainings">
-                <p>Emplois Stage Pré-embauche - Ville</p>
-                <div class="training-notif">
-                    <div>
-                        <h2 class="training-title">Stape pré-embauche développeur web</h2>
-                        <p class="training-city training-title">Casablanca</p>
-                        <p class="training-desc training-title">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore repudiandae quo odio
-                            ratione
-                            assumenda enim dolorum illum suscipit veniam. Nihil, harum alias laudantium aut repudiandae
-                            soluta quibusdam eum odio ipsam!
-                        </p>
-                        <p class="training-date training-title">il y a 2 jours</p>
-                    </div>
-                </div>
-                <div class="training-notif">
-                    <div>
-                        <h2 class="training-title">Stape pré-embauche développeur web</h2>
-                        <p class="training-city training-title">Casablanca</p>
-                        <p class="training-desc training-title">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore repudiandae quo odio
-                            ratione
-                            assumenda enim dolorum illum suscipit veniam. Nihil, harum alias laudantium aut repudiandae
-                            soluta quibusdam eum odio ipsam!
-                        </p>
-                        <p class="training-date training-title">il y a 2 jours</p>
-                    </div>
-                </div>
-                <div class="training-notif">
-                    <div>
-                        <h2 class="training-title">Stape pré-embauche développeur web</h2>
-                        <p class="training-city training-title">Casablanca</p>
-                        <p class="training-desc training-title">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore repudiandae quo odio
-                            ratione
-                            assumenda enim dolorum illum suscipit veniam. Nihil, harum alias laudantium aut repudiandae
-                            soluta quibusdam eum odio ipsam!
-                        </p>
-                        <p class="training-date training-title">il y a 2 jours</p>
-                    </div>
-                </div>
-                <div class="training-notif">
-                    <div>
-                        <h2 class="training-title">Stape pré-embauche développeur web</h2>
-                        <p class="training-city training-title">Casablanca</p>
-                        <p class="training-desc training-title">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore repudiandae quo odio
-                            ratione
-                            assumenda enim dolorum illum suscipit veniam. Nihil, harum alias laudantium aut repudiandae
-                            soluta quibusdam eum odio ipsam!
-                        </p>
-                        <p class="training-date training-title">il y a 2 jours</p>
-                    </div>
-                </div>
-            </div>
-            <div class="recieve-emails">
-                <p>Simplifiez-vous la vie ! Recevez par email les nouveaux emplois correspondant à cette recherche.</p>
-
-                <div class="create-email-dialog">
-                    <p>Mon email : </p>
-                    <form>
-                        <div>
-                            <input type="email" class="email-dialog input-city" required
-                                placeholder="Example@gmail.com" />
-                        </div>
-                        <div>
-                            <button class="validate-btn search-btn">Valider</button>
-                        </div>
-                    </form>
-                </div>
-                <p class="email-dialog-alert">
-                    En créant une alerte emploi ou en recevant des emplois recommandés, vous acceptez nos conditions
-                    d'utilisation. Vous pouvez revenir à tout moment sur cette décision en vous désinscrivant ou en
-                    suivant la procédure décrite dans nos conditions d'utilisation.
-                </p>
-            </div>
-        </div>
 
     </div>
     <script src="../js/footer.js"></script>
