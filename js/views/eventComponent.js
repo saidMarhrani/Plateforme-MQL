@@ -62,7 +62,7 @@ eventComponent.prototype.buildForm = function () {
     var formElement = this.buildElement("form");
     var inputDiv = this.buildInput("date from","De","date");
     var inputDiv2 = this.buildInput("date to","A","date");
-    var selectElement = this.buildSelectElement("select-style inline","catSelect","Catégorie","competition","Tests psychotechniques"
+    var selectElement = this.buildSelectElement("select-style inline","catSelect","Catégorie","Competition","Tests psychotechniques"
     ,"Tests Techniques","Entretiens","Remise des Diplomes");
     var searchBtn = this.buildElement("button","search-btn","Rechercher");
     formElement.appendChild(inputDiv);
@@ -83,13 +83,14 @@ eventComponent.prototype.buildEventCard = function (event) {
     var pTitle = this.buildElement("p",undefined,event.name);
     var spanElement = this.buildElement("span","date-event");
     var spanImg = this.buildElement("img","icon-event",undefined,["src"],["../icons/calendar.png"]);
-
+    var catEventp = this.buildElement("p","event-cat",event.cat);
     var date = document.createTextNode("  "+event.date.getDate()+"-"+event.date.getMonth()+"-"+event.date.getUTCFullYear());
     spanElement.appendChild(spanImg);
     spanElement.appendChild(date);
 
 
     divInfo.appendChild(pTitle);
+    divInfo.appendChild(catEventp);
     divInfo.appendChild(spanElement);
 
     divALL.appendChild(divImg);
@@ -125,17 +126,3 @@ eventComponent.prototype.filterByDateComponent= function (dateD,dateF) {
     this.service.filterByDate(dateD,dateF);
     this.updateEvents();
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,15 +1,21 @@
 var eventDB=[
     {
-        name : "Session de recrutement Umanist",
+        name : "Session de recrutement Umanis",
         image : "umanist.JPG",
         cat : "Entretiens",
+
         date:new Date(2020,11,21)
+
+
     },
     {
-        name : "Session de recrutement Umanist",
+        name : "Session de recrutement Umanis",
         image : "umanist2.jpg",
         cat : "Tests Techniques",
+
         date:new Date(2020,11,22)
+
+
     },
     {
         name : "Session de recrutement Capgmini",
@@ -28,6 +34,7 @@ var eventDB=[
         image : "prenariat.JPG",
         cat : "competition",
         date:new Date(2020,2,15)
+
     },
     {
         name : "Session de recrutement CGI FES",

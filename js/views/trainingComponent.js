@@ -97,7 +97,7 @@ trainingComponent.prototype.buildTrainingCard = function (training) {
     //var pDate =  this.buildElement("p","training-city training-date",training.date);
     var pSalire = this.buildElement("p","salary","Salaire : "+training.salary+" DH");
     var pDiv = this.buildElement("p","training-date training-title");
-    var textNode = document.createTextNode(training.date);
+    var textNode = document.createTextNode(training.date.getDate()+"-"+training.date.getMonth()+"-"+training.date.getFullYear());
     var spanContratType = this.buildElement("span",undefined,"Type de contrat : "+training.contratType);
     pDiv.appendChild(textNode);
     pDiv.appendChild(spanContratType);
