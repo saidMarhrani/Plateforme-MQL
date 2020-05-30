@@ -3,6 +3,7 @@ function eventService() {
 }
 
 eventService.prototype.load = function () {
+    console.log(eventDB);
     for(var i=0;i<eventDB.length;i++)
     {
         this.events.push(
@@ -14,6 +15,7 @@ eventService.prototype.load = function () {
             )
         )
     }
+
 }
 eventService.prototype.filterByCategorie = function (cat) {
 

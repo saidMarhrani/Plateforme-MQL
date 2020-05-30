@@ -62,7 +62,7 @@ eventComponent.prototype.buildForm = function () {
     var formElement = this.buildElement("form");
     var inputDiv = this.buildInput("date from","De","date");
     var inputDiv2 = this.buildInput("date to","A","date");
-    var selectElement = this.buildSelectElement("select-style inline","catSelect","Catégorie","Compagne de stage","Tests psychotechniques"
+    var selectElement = this.buildSelectElement("select-style inline","catSelect","Catégorie","competition","Tests psychotechniques"
     ,"Tests Techniques","Entretiens","Remise des Diplomes");
     var searchBtn = this.buildElement("button","search-btn","Rechercher");
     formElement.appendChild(inputDiv);
@@ -74,6 +74,7 @@ eventComponent.prototype.buildForm = function () {
 }
 
 eventComponent.prototype.buildEventCard = function (event) {
+    console.log(event.date)
     var  divALL= this.buildElement("div","event-element");
     var divImg = this.buildElement("div","event-img");
     var imgElemet = this.buildElement("img",undefined,undefined,["src"],["../images/events/"+event.image]);
@@ -83,7 +84,7 @@ eventComponent.prototype.buildEventCard = function (event) {
     var spanElement = this.buildElement("span","date-event");
     var spanImg = this.buildElement("img","icon-event",undefined,["src"],["../icons/calendar.png"]);
 
-    var date = document.createTextNode(event.date.getDay()+"-"+event.date.getMonth()+"-"+event.date.getFullYear());
+    var date = document.createTextNode("  "+event.date.getDate()+"-"+event.date.getMonth()+"-"+event.date.getUTCFullYear());
     spanElement.appendChild(spanImg);
     spanElement.appendChild(date);
 
