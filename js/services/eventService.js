@@ -29,3 +29,12 @@ eventService.prototype.filterByCategorie = function (cat) {
 
     return this.events;
 };
+eventService.prototype.filterByDate = function (dateD,dateF) {
+    this.load();
+    console.log(this.events);
+    this.events = this.events.filter(function (event) {
+        return (event.date>=dateD && event.date<=dateF);
+    });
+    console.log(this.events);
+    return this.events;
+}

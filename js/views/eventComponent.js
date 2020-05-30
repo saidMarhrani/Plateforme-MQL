@@ -52,7 +52,7 @@ eventComponent.prototype.buildInput = function(className,content,inputType)
 {
     var div=this.buildElement("div",className);
     var pElement = this.buildElement("p",undefined,content);
-    var inputElemet = this.buildElement("input",className,undefined,["type"],[inputType]);
+    var inputElemet = this.buildElement("input",className+" "+content,undefined,["type"],[inputType]);
     div.appendChild(pElement);
     div.appendChild(inputElemet);
     return div;
@@ -64,9 +64,11 @@ eventComponent.prototype.buildForm = function () {
     var inputDiv2 = this.buildInput("date to","A","date");
     var selectElement = this.buildSelectElement("select-style inline","catSelect","Catégorie","Compagne de stage","Tests psychotechniques"
     ,"Tests Techniques","Entretiens","Remise des Diplomes");
+    var searchBtn = this.buildElement("button","search-btn","Rechercher");
     formElement.appendChild(inputDiv);
     formElement.appendChild(inputDiv2);
     formElement.appendChild(selectElement);
+    formElement.appendChild(searchBtn);
     divForm.appendChild(formElement);
     this.container.appendChild(divForm);
 }
@@ -74,7 +76,7 @@ eventComponent.prototype.buildForm = function () {
 eventComponent.prototype.buildEventCard = function (event) {
     var  divALL= this.buildElement("div","event-element");
     var divImg = this.buildElement("div","event-img");
-    var imgElemet = this.buildElement("img",undefined,undefined,["src"],["../images/"+event.image]);
+    var imgElemet = this.buildElement("img",undefined,undefined,["src"],["../images/events/"+event.image]);
     divImg.appendChild(imgElemet);
     var divInfo = this.buildElement("div","event-info");
     var pTitle = this.buildElement("p",undefined,event.name);
@@ -118,7 +120,10 @@ eventComponent.prototype.filterByCatComponent = function (cat) {
     this.service.filterByCategorie(cat);
     this.updateEvents();
 }
-
+eventComponent.prototype.filterByDateComponent= function (dateD,dateF) {
+    this.service.filterByDate(dateD,dateF);
+    this.updateEvents();
+}
 
 
 

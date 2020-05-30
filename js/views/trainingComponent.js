@@ -94,12 +94,20 @@ trainingComponent.prototype.buildTrainingCard = function (training) {
     var h2Title = this.buildElement("h2","training-title",training.title);
     var pCity =  this.buildElement("p","training-city training-city",training.city);
     var pdesc =  this.buildElement("p","training-desc training-desc",training.desc);
-    var pDate =  this.buildElement("p","training-city training-date",training.date);
+    //var pDate =  this.buildElement("p","training-city training-date",training.date);
+    var pSalire = this.buildElement("p","salary","Salaire : "+training.salary+" DH");
+    var pDiv = this.buildElement("p","training-date training-title");
+    var textNode = document.createTextNode(training.date);
+    var spanContratType = this.buildElement("span",undefined,"Type de contrat : "+training.contratType);
+    pDiv.appendChild(textNode);
+    pDiv.appendChild(spanContratType);
 
     divSup.appendChild(h2Title);
     divSup.appendChild(pCity);
     divSup.appendChild(pdesc);
-    divSup.appendChild(pDate);
+    divSup.appendChild(pSalire);
+    divSup.appendChild(pDiv);
+    //divSup.appendChild(pDate);
 
     trainigDiv.appendChild(divSup);
     return trainigDiv;
@@ -121,6 +129,7 @@ trainingComponent.prototype.buildEmailCard = function () {
     formElement.appendChild(divButton);
     divForm.appendChild(pElement2);
     divForm.appendChild(formElement);
+
 
     var pElement3 = this.buildElement("p","email-dialog-alert","En créant une alerte emploi ou" +
         " en recevant des emplois recommandés, vous acceptez nos conditions d'utilisation. Vous pouvez revenir à tout moment sur" +
