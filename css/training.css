@@ -175,6 +175,25 @@ body{
     font-size: 14px;
 }
 
+.salary{
+    font-size: 15px;
+    line-height: 2;
+    color: #55a860;
+}
+
+.training-date > span {
+    float: right; 
+    font-size: 15px; 
+    color: black;
+}
+
+.training-date > span > img{
+    position: relative; 
+    top:4px;
+    width:20px; 
+    height: 20px;
+}
+
 .recieve-emails{
     top: 0;
     width: 40%;
