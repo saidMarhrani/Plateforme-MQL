@@ -268,7 +268,7 @@ body {
 .event-info > p{
     font-size: 16px;
     font-weight: bold;
-    text-shadow: 2px 2px 3px rgb(163, 162, 162);
+    text-shadow: 1px 1px 5px rgb(48, 47, 47);
 }
 
 .category-event{
@@ -279,9 +279,14 @@ body {
     color: rgb(224, 224, 220);
     font-size: 14px;
     letter-spacing: 2px;
-    /* font-weight: bold; */
 }
 
+.event-cat{
+  text-shadow: none; 
+  font-size: 14px; 
+  line-height: 1.2; 
+  color: rgb(245, 171, 33);
+}
 .icon-event{
     width: 17px;
     height: 17px;

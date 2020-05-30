@@ -124,17 +124,3 @@ eventComponent.prototype.filterByDateComponent= function (dateD,dateF) {
     this.service.filterByDate(dateD,dateF);
     this.updateEvents();
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
