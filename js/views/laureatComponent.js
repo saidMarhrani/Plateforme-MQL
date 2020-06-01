@@ -91,8 +91,8 @@ LaureatComponent.prototype.buildLaureatDiv = function (laureat) {
     var psociety = this.buildElement("p","Société : ");
     var spanociety = this.buildElement("span",laureat.society);
 
-    var pville = this.buildElement("p","Ville : ");
-    var spanville = this.buildElement("span",laureat.ville);
+    // var pville = this.buildElement("p","Ville : ");
+    // var spanville = this.buildElement("span",laureat.ville);
 
     var divInfo = this.buildElement("div",undefined,"laureat-info");
 
@@ -100,12 +100,12 @@ LaureatComponent.prototype.buildLaureatDiv = function (laureat) {
     imgDiv.appendChild(imgElement);
     pPromo.appendChild(spanPromo);
     psociety.appendChild(spanociety);
-    pville.appendChild(spanville);
+    // pville.appendChild(spanville);
 
     divInfo.appendChild(h2Element);
     divInfo.appendChild(pPromo);
     divInfo.appendChild(psociety);
-    divInfo.appendChild(pville);
+    // divInfo.appendChild(pville);
 
     laureatDiv.appendChild(imgDiv);
     laureatDiv.appendChild(divInfo);
@@ -125,16 +125,7 @@ LaureatComponent.prototype.buildSecondContainer = function () {
 LaureatComponent.prototype.buildAll = function () {
     var firstContainerDiv = this.buildFirstContainer();
     var secondContainerDiv = this.buildSecondContainer();
-    // if(firstTime==true)
-    // {
-    //     this.body.appendChild(firstContainerDiv);
-    //     this.body.appendChild(secondContainerDiv);
-    // }
-    // else
-    // {
-    //     this.body.appendChild(secondContainerDiv);
-    // }
-
+   
 }
 LaureatComponent.prototype.updateSecondContainer = function(){
     var divContainer = document.getElementsByClassName("container second")[0];
@@ -155,25 +146,6 @@ LaureatComponent.prototype.filterBySociety = function (society) {
 }
 LaureatComponent.prototype.filterByPromo = function (promo) {
 
-    // var tab=["Promotion","Lieu","Société"];
-    // if(promo=="Promotion")
-    // {
-    //     this.filterByPromo(this.value);
-    // }
-    // else if(tab.includes(element2.value) )
-    // {
-    //     console.log("je suis entreer");
-    //     this.service.load();
-    //     this.updateSecondContainer();
-    // }
-    // else
-    // {
-    //     this.service.laureats = JSON.parse(sessionStorage.getItem("allLaureat"));
-    //     console.log(this.service.laureats);
-    //     this.updateSecondContainer();
-    // }
-    // this.service.filterByPromo(promo);
-    // this.updateSecondContainer();
     console.log( this.service.laureats);
     this.service.setLaureats(this.service.filterByPromo(promo));
     this.updateSecondContainer();

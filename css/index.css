@@ -23,12 +23,7 @@ body {
     padding: 30px;
     text-align: center;
     border-radius: 10px;
-    /* background-color: rgba(0, 0, 0, 0.099); */
 }
-
-/* .background_image > div > h3{ */
-    /* text-shadow: 3px 3px 5px black;     */
-/* } */
 
 .background_image > div > p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -38,14 +33,11 @@ body {
     font-size: 56px;
 }
 
-
-
 .container{
     margin: 0px 100px;
 }
 
 .master-goal{
-    /* margin-top: 54%; */
     height: 650px;
     transition: all 0.7s linear;
 }
@@ -53,10 +45,7 @@ body {
 .master-title{
     text-align: center;
     padding-top: 10%;
-    /* margin: 0 auto; */
-    /* width: 250px; */
     margin-bottom: 5%;
-    /* border-bottom: 3px dashed dimgray; */
     padding-bottom: 3px;
     border-bottom-left-radius: 1.5px;
     border-bottom-right-radius: 1.5px;
@@ -73,7 +62,6 @@ body {
     color: #10316b;
     font-size: 60px;
     font-weight: bolder;
-    /* letter-spacing: 8px; */
     text-shadow: 5px 3px 10px darkgray;
 }
 
@@ -95,7 +83,6 @@ body {
 .training{
     background-image: url('../images/success-2697951_1920.jpg');
     position:relative; 
-    /* text-align:center;  */
     overflow:hidden;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -108,9 +95,7 @@ body {
 .training:hover{
     background-color: rgba(0, 0, 0, 0.099);
     opacity: 0.9;
-    /* background-color: rgb(255, 255, 255, 0.2); */
     transform: scale(1.015);
-    /* opacity: 0.08; */
 }
 
 .training-goal-title {

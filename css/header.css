@@ -70,7 +70,6 @@
 }
 .bar-menu ul li:hover .sub-menu-1 ul{
     display: block;
-    /* padding: 5px; */
     width: 300px;
 }
 .bar-menu ul li:hover .sub-menu-1 ul li{
