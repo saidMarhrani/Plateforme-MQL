@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
 .bar-menu img{
     position: relative;
     width: 60px;
@@ -10,8 +11,12 @@
 }
 
 .bar-menu{
-    background-color: #343a40!important;
+    background-color: white!important;
     padding-left: 120px;
+    font-size: 20px;
+    height: 80px;
+    padding-top: 10px;
+    box-shadow: 2px 0px 8px black;
 }
 .bar-menu ul{
     display: inline-flex;
@@ -24,12 +29,12 @@
 }
 .bar-menu ul li a{
     text-decoration: none;
-    color: white;
+    color: rgb(8, 94, 145)
 }
 
 .bar-menu ul li .first-a-level:hover{
     text-decoration: none;
-    color: white;
+    color: rgb(17, 74, 112);
 }
 
 .first-a-level::after {
@@ -37,7 +42,7 @@
     display: block;
     width: 0;
     height: 2px;
-    background: white;
+    background: rgb(5, 57, 117);
     transition: width .3s;
     margin-bottom: 2px;
     padding-bottom: 1px;

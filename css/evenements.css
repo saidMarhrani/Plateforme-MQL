@@ -121,7 +121,7 @@ body {
     padding: 20px 100px;
     border: 1px solid #ccc;
     border-radius: 7px;
-    box-shadow: 1px 1px 10px #7c7a7a;
+    box-shadow: 1px 1px 3px #dddddd;
 }
 
 .form-div > form > div{

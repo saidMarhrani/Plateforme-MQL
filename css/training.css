@@ -157,17 +157,20 @@ body{
 }
 
 .training-title{
-    color: #575555;
+    color: #000000;
     line-height: 2;
     font-size: 22px;
 }
 
 .training-city{
     font-size: 18px;
+    color: rgb(39, 33, 33);
+    font-weight: normal;
 }
 
 .training-desc{
     font-size: 15px;
+    color: rgb(158, 157, 157);
 }
 
 .training-date{
@@ -178,13 +181,14 @@ body{
 .salary{
     font-size: 15px;
     line-height: 2;
-    color: #55a860;
+    color: #686b68;
+    font-weight: 100;
 }
 
 .training-date > span {
     float: right; 
     font-size: 15px; 
-    color: black;
+    color: rgb(136, 132, 132);
 }
 
 .training-date > span > img{
