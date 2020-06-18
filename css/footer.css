@@ -3,6 +3,30 @@
     padding: 0;
 }
 
+@media (max-width: 706px){
+    body .display-inline-block{
+        width: 100%;
+        padding: 10px 5px;
+    }
+    body .body-container{
+        height: fit-content;
+        width: 100%;
+    }
+    body .footer-container{
+        height: 70px;
+        padding: 5% 2% 0px 0px;
+    }
+    body .change-position{
+        float: none;
+    }
+}
+@media (max-width: 1165px){
+    body .display-inline-block{
+
+        padding: 50px 20px;
+    }
+}
+
 footer {
     font-family: monospace;
 }
@@ -31,7 +55,7 @@ footer {
 }
 
 .body-title{
-    font-size: 32px;
+    font-size: 12px;
     font-style: italic;
     color: #ff9234;
     padding-bottom: 40px;

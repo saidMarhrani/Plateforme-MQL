@@ -1,12 +1,106 @@
+body{
+    width: 90%;
+    margin-left: 5%;
+    background-size: 100% 100%;
+    height: 100%;
+    box-shadow: 2px 0px 8px black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("../images/background.jpg");
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 *{
     padding: 0px;
     margin: 0px;
 }
 
-body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+@media (max-width: 1285px) {
+    body .header-title {
+        font-size: 30px;
+        padding-top: 30%;
+    }
 
+    body .more {
+        margin-top: 15%;
+        margin-left: 30%;
+    }
+
+    body .professeurs {
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    body .professeurs:after {
+        margin-left: 33%;
+    }
+
+    body .card {
+        display: block;
+        margin-left: 0px;
+    }
+
+    body .card-header {
+        margin-left: 0px !important;
+    }
+
+    body .training-goal-title {
+        font-size: 20px;
+        padding-top: 15%;
+    }
+    body .training-content{
+        height: 100%;
+    }
+
+    body .training > .training-container > .container > p {
+        font-size: 12px;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 5%;
+    }
+    body .mql{
+        font-size: 14px;
+    }
+    body .master{
+        font-size: 14px;
+    }
+    body .training{
+        height: 400px;
+    }
+    body .training-container{
+        height: 400px;
+    }
+    body .formation-mql{
+        width: auto;
+        margin-left: 0px !important;
+    }
+    body .semester{
+        margin-left: 0px;
+    }
+    body .flip-box{
+        height: 360px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    body .card-hover{
+        text-align: center;
+        margin-top: 20%;
+        margin-bottom: 10%;
+    }
+}
+@media (max-width: 530px) {
+    body .header-title {
+        font-size: 25px;
+        padding-top: 40%;
+    }
+
+    body .more {
+        display: block;
+        margin-top: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 .background_image {
     background-image: url("../images/nesa-by-makers-IgUR1iX0mqM-unsplash.jpg");
     background-size: 100% 100%;
@@ -26,8 +120,8 @@ body {
 
 .more{
     font-size: 20px;
-    margin: 0;
-    position: absolute;
+
+
     top: 80%;
     left: 45%;
     padding: 10px 30px;
@@ -36,6 +130,8 @@ body {
     color: rgb(253, 253, 253);
     background-color: transparent;
     transition: 0.5s all;
+    margin-left: 45%;
+    margin-top: 5%;
 }
 
 .more:hover{
@@ -45,11 +141,12 @@ body {
 }
 
 .container{
-    margin: 0px 60px;
+    margin: 0px;
 }
 
 .nos-prof{
     padding: 50px 0px 70px 0px;
+    background-color: white;
 }
 
 .master-title{
@@ -69,6 +166,7 @@ body {
     font-size: 60px;
     font-weight: bolder;
     text-shadow: 1px 1px 1px black;
+    font-size: 25px;
 }
 
 .master-goal > .container > p {
@@ -84,6 +182,7 @@ body {
     font-family: Goudy Old Style;
     margin-left: 3px;
     letter-spacing: 5px;
+    font-size: 25px;
 }
 
 .training{
@@ -127,6 +226,7 @@ body {
     color: white;
     text-align: left;
     text-shadow: 2px 2px 5px #293462;
+    margin-left: 10%;
     /* width: 520px; */
     /* border-bottom: 5px solid darkred;
     padding-bottom: 3px; */
@@ -170,6 +270,8 @@ body {
     color: white;
     text-align: left;
     line-height: 2;
+    margin-left: 2%;
+    margin-left: 2%;
 }
 
 /* .steps{
@@ -195,6 +297,7 @@ body {
     font-size: 32px;
     line-height: 1.5;
     color: rgb(27, 74, 105);
+    margin-left: 10%;
 }
 
 .professeurs:after {
@@ -247,9 +350,10 @@ body {
 
 .training-education{
     /* margin: 10% 0%; */
-    padding: 60px 30px 160px 30px;
+    padding: 60px 30px 60px 30px;
     border-bottom: 2px solid ghostwhite;
     box-shadow: 5px 5px 13px rgb(24, 19, 19);
+    background-color: white;
 }
 
 .training-education > .container > p{
@@ -345,6 +449,7 @@ body {
 .partners{
     /* height: 450px; */
     padding: 60px 30px;
+    background-color: white;
 }
 
 .partners > div > h3::after{
@@ -390,10 +495,10 @@ a{
     height: 40px;
 }
 
-#umanis_logo{
-    width: 160px;
-    height: 120px;
-}
+/*#umanis_logo{*/
+/*    width: 160px;*/
+/*    height: 120px;*/
+/*}*/
 #cegedim_logo{
     width: 200px;
     height: 100px;
