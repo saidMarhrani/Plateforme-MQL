@@ -134,8 +134,18 @@ footer {
     height:30px;
 }
 
+@media (max-width: 800px){
+    .send{
+        display: block;
+        float: inherit;
+        /* margin-top: 10%; */
+        /* top: 10%; */
+        left: 2%;
+    }
+}
 
-@media (max-width: 706px){
+
+@media (max-width: 650px){
     body .display-inline-block{
         width: 100%;
         padding: 10px 5px;
@@ -153,6 +163,14 @@ footer {
     }
     .footer-container{
         padding: 15px 35px !important;
+    }
+
+    .send{
+        display: block;
+        float: inherit;
+        /* margin-top: 10%; */
+        top: 10%;
+        left: 2%;
     }
 }
 @media (max-width: 1165px){
