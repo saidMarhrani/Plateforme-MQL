@@ -11,15 +11,15 @@
     background-color: white;
     padding-top: 5%;
 }
-.container{
-    /*margin: 0px 100px 30px 100px;*/
+/* .container{
+    margin: 0px 100px 30px 100px;
 
 }
 
 .find-us{
 
 
-}
+} */
 
 .section-title {
     font-size: 40px;
@@ -201,11 +201,7 @@
         /* display: block; */
         /*width: 60%;*/
         height: 70%;
-<<<<<<< HEAD
         /* margin-bottom: 100%; */
-=======
-        /*margin-bottom: 100%;*/
->>>>>>> 25948ecf01cd2cfb9773bbaa3466814bcc2f68f8
     }
 
     .input-text{
