@@ -171,6 +171,7 @@ body{
 .training-desc{
     font-size: 15px;
     color: rgb(158, 157, 157);
+    text-align: justify;
 }
 
 .training-date{
@@ -249,4 +250,165 @@ body{
     margin-top: 2%;
     font-size: 13px;
     color: #4d4d4e;
+    text-align: justify;
+}
+
+.separate-line{
+    background-color: #ccc; 
+    color: #ccc; 
+    margin-top: 10px;
+    width: 92%;
+}
+
+@media (max-width: 1100px) {
+
+    .container{
+        margin: 0px 20px 30px 50px;
+    }
+    
+    .trainings > p{
+        font-size: 12px;
+        line-height: 2;
+    }
+    
+    .training-title{
+        line-height: 1.5;
+        font-size: 15px;
+    }
+    
+    .training-city{
+        font-size: 13px;
+    }
+    
+    .training-desc{
+        font-size: 13px;
+        text-align: justify;
+    }
+    
+    .training-date{
+        font-size: 12px;
+    }
+    
+    .recieve-emails{
+        margin-top: 8%;
+    }
+    
+    .recieve-emails > p {
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+
+        
+    .create-email-dialog{
+        padding-top: 10px;
+    }
+
+    .create-email-dialog > p{
+        font-size: 14px;
+    }
+
+    .email-dialog{
+        width: 100%;
+    }
+    
+    .validate-btn{
+        margin-bottom: 10px;    
+    }
+
+    .email-dialog-alert {
+        font-size: 12px;
+        text-align: justify;
+    }
+    .input-city{
+        font-size: 13px;
+        width: 75%;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .container{
+        margin: 0px 20px 30px 20px;
+    }
+
+    .trainings{
+        display: block;
+        /* position: absolute; */
+        width: 100%;
+    }
+
+    .recieve-emails{
+        display: block;
+        float: left;
+        left: 0%;
+        /* background-color: red; */
+        width: 100%;
+        /* margin-left: 30px !important; */
+    }
+    
+    .trainings > p{
+        font-size: 12px;
+        line-height: 2;
+    }
+    
+    .training-title{
+        line-height: 1.5;
+        font-size: 14px;
+    }
+    
+    .training-city{
+        font-size: 12px;
+    }
+    
+    .training-desc{
+        font-size: 12px;
+        text-align: justify;
+    }
+    
+    .training-date{
+        font-size: 12px;
+    }
+    
+    .recieve-emails{
+        /* display: block; */
+        /* margin-top: 8%;         */
+    }
+    
+    .recieve-emails > p {
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+        
+    .create-email-dialog{
+        padding-top: 10px;
+    }
+
+    .create-email-dialog > p{
+        font-size: 12px;
+    }
+
+    .email-dialog{
+        width: 100%;
+    }
+    
+    .validate-btn{
+        /* margin-bottom: 10px;    */
+        font-size: 12px;
+        /* padding: 0px 16px !important; */
+    }
+
+    .email-dialog-alert {
+        font-size: 12px;
+        text-align: justify;
+    }
+    .input-city{
+        display: block;
+        font-size: 12px;
+        width: 90%;
+    }    
+
+    .map-icon{
+        position: absolute;
+        display: none;
+    }
 }

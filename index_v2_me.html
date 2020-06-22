@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="css/contactus.css" />
     <!--                    Laureat Style                           -->
     <link rel="stylesheet" href="css/laureats.css" type="text/css" />
-<!--Navigation script-->
+    <!--Navigation script-->
     <script src="js/navigation.js"></script>
-<!--               Laureat Scripts                    -->
+    <!--               Laureat Scripts                    -->
     <script src="js/Database/laureatDB.js"></script>
     <script src="js/models/laureat.js"></script>
     <script src="js/services/laureatService.js"></script>
@@ -23,7 +23,7 @@
 
 </head>
 
-<body >
+<body>
     <header>
         <nav>
 
@@ -36,10 +36,10 @@
                     <img src="images/MQLTransaprent.png" alt="logo" style="width: 100px; height: 50px;" />
                 </a>
                 <ul>
-<!--                    <li>-->
-<!--                        <a href="index.html">-->
-<!--                            <img src="images/MQLTransaprent.png" alt="logo" style="width: 100px; height: 50px;" /></a>-->
-<!--                    </li>-->
+                    <!--                    <li>-->
+                    <!--                        <a href="index.html">-->
+                    <!--                            <img src="images/MQLTransaprent.png" alt="logo" style="width: 100px; height: 50px;" /></a>-->
+                    <!--                    </li>-->
                     <li><a class="first-a-level " href="#" onclick="goToPage('event-page')">Evénements</a></li>
                     <li><a class="first-a-level " href="#" onclick="goToPage('allAureats')">Lauréats</a></li>
                     <li><a class="first-a-level " href="#" onclick="goToPage('stage-page')">Stage Pré-embauche</a></li>
@@ -56,210 +56,208 @@
             </div>
         </nav>
     </header>
-<!--    Index Component    -->
-<div  id="index-page" class="page-hide">
-    <div class="background_image">
-        <div class="container">
-            <p class="header-title">Start getting knowledge with ...
-                <br />
-                <span class="mql"
-                    style=" font-size: 56px!important;"><b>MQL</b></span><img
-                    src="images/fes.png" width="100px" height="100px" />
-            </p>
-            <button class="more">See more ...</button>
-        </div>
-    </div>
-
-    <div class="container nos-prof">
-        <p class="professeurs">Nos Professeurs</p>
-        <div class="card card-header">
-            <img src="images/Noureddine_Chenfour.jpeg" width="80px" height="80px" />
-
-            <div class="card-body">
-                <p>Mr. Noureddine Chenfour</p>
-                <p><a href="#">Voir plus.</a></p>
-            </div>
-        </div>
-        <div class="card card-header">
-            <img src="images/ahmed_azough.jpeg" width="80px" height="80px" />
-
-            <div class="card-body">
-                <p>Mr. Ahmed Azough</p>
-                <p><a href="#">Voir plus.</a></p>
-            </div>
-        </div>
-        <div class="card card-header">
-            <img src="images/omar_elbaqali.jpeg" width="80px" height="80px" />
-
-            <div class="card-body">
-                <p>Mr. Omar Elbaqali</p>
-                <p><a href="#">Voir plus.</a></p>
-            </div>
-        </div>
-    </div>
-
-    <div class="training">
-        <div class="training-container">
+    <!--    Index Component    -->
+    <div id="index-page" class="page-hide">
+        <div class="background_image">
             <div class="container">
-                <h3 class="training-goal-title">Débouchés de la Formation </h3>
-
-                <p>Le Master <span class="master mql" >MQL</span> participe très activement dans
-                    le
-                    domaine de l’offshore. Le principal « client » <span class="master mql"
-                       >MQL</span>
-                    se trouve dans tous les parcs d’activité offshore et
-                    Outsourcing au Maroc et principalement <span class="master" >Casablanca
-                        Nearshore Park, Rabat Technopolis</span> et <span class="master" >Fès
-                        Shore</span> avec un
-                    taux d’insertion de 100% des étudiants dans des multinationales : <span class="master"
-                        >Capgemini, CGI Tcehnologies, Atos,
-                        Cegedim et Accenture.</span>
+                <p class="header-title">Start getting knowledge with ...
+                    <br />
+                    <span class="mql" style=" font-size: 56px!important;"><b>MQL</b></span><img src="images/fes.png"
+                        width="100px" height="100px" />
                 </p>
+                <button class="more">See more ...</button>
             </div>
         </div>
-    </div>
 
-    <div class="training-education">
-        <div class="container">
-            <p>Formation MQL 2007 - 2019</p>
+        <div class="container nos-prof">
+            <p class="professeurs">Nos Professeurs</p>
+            <div class="card card-header">
+                <img src="images/Noureddine_Chenfour.jpeg" width="80px" height="80px" />
 
-            <div class="card formation-mql">
-                <p class="nbr">12</p>
-                <p class="desc">Années d’existence</p>
-            </div>
-            <div class="card formation-mql">
-                <p class="nbr">350+</p>
-                <p class="desc">Etudiants</p>
-            </div>
-            <div class="card formation-mql">
-                <p class="nbr">215+</p>
-                <p class="desc">Contrats CDI</p>
-            </div>
-            <div class="card formation-mql">
-                <p class="nbr">20+</p>
-                <p class="desc">Entreprises</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="training-content">
-        <div class="container">
-            <h3 class="professeurs">Contenu de la formation</h3>
-            <div class="flip-box">
-                <div class="flip-box-inner">
-                    <div class="flip-box-front">
-                        <div class="semester">
-                            <p>Semestre - 1</p>
-                        </div>
-                    </div>
-                    <div class="flip-box-back">
-                        <p><strong>M1 :</strong> Ingénierie de l’Objet et Technologie Java</p>
-                        <p><strong>M2 :</strong> Technologie XML</p>
-                        <p><strong>M3 :</strong> Génie Logiciel & Modélisation UML</p>
-                        <p><strong>M4 :</strong> Bases de données</p>
-                        <p><strong>M5 :</strong> Audit & Qualité du Logiciel</p>
-                        <p><strong>M6 :</strong> Communication Professionnelle</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="flip-box">
-                <div class="flip-box-inner">
-                    <div class="flip-box-front">
-                        <div class="semester">
-                            <p>Semestre - 2</p>
-                        </div>
-
-                    </div>
-                    <div class="flip-box-back">
-                        <p><strong>M1 :</strong> Design Patterns</p>
-                        <p><strong>M2 :</strong> Ingénierie du Web</p>
-                        <p><strong>M3 :</strong> Architecture Java EE</p>
-                        <p><strong>M4 :</strong> Technologies Mobiles</p>
-                        <p><strong>M5 :</strong> Portails d’entreprises</p>
-                        <p><strong>M6 :</strong> Gestion de projets & Méthodes Agiles</p>
-                    </div>
+                <div class="card-body">
+                    <p>Mr. Noureddine Chenfour</p>
+                    <p><a href="#">Voir plus.</a></p>
                 </div>
             </div>
+            <div class="card card-header">
+                <img src="images/ahmed_azough.jpeg" width="80px" height="80px" />
 
-            <div class="flip-box">
-                <div class="flip-box-inner">
-                    <div class="flip-box-front">
-                        <div class="semester">
-                            <p>Semestre - 3</p>
-                        </div>
-
-                    </div>
-                    <div class="flip-box-back">
-                        <p><strong>M1 :</strong> Frameworks Java EE</p>
-                        <p><strong>M2 :</strong> Plateforme Applicative Microsoft</p>
-                        <p><strong>M3 :</strong> Outils d’industrialisation & environnement Offshore</p>
-                        <p><strong>M4 :</strong> Business Intelligence & Big Data</p>
-                        <p><strong>M5 :</strong> Cloud Computing</p>
-                        <p><strong>M6 :</strong> Culture d’entreprise</p>
-                    </div>
+                <div class="card-body">
+                    <p>Mr. Ahmed Azough</p>
+                    <p><a href="#">Voir plus.</a></p>
                 </div>
             </div>
+            <div class="card card-header">
+                <img src="images/omar_elbaqali.jpeg" width="80px" height="80px" />
 
-            <div class="flip-box">
-                <div class="flip-box-inner">
-                    <div class="flip-box-front">
-                        <div class="semester">
-                            <p>Semestre - 4</p>
-                        </div>
-
-                    </div>
-                    <div class="flip-box-back">
-                        <p style="margin-top: 35%; text-align: center;">Stage pré-embauche dans des multinationales
-                            actives en développement
-                            offshore.
-                        </p>
-                    </div>
+                <div class="card-body">
+                    <p>Mr. Omar Elbaqali</p>
+                    <p><a href="#">Voir plus.</a></p>
                 </div>
             </div>
         </div>
 
-    </div>
+        <div class="training">
+            <div class="training-container">
+                <div class="container">
+                    <h3 class="training-goal-title">Débouchés de la Formation </h3>
 
+                    <p>Le Master <span class="master mql">MQL</span> participe très activement dans
+                        le
+                        domaine de l’offshore. Le principal « client » <span class="master mql">MQL</span>
+                        se trouve dans tous les parcs d’activité offshore et
+                        Outsourcing au Maroc et principalement <span class="master">Casablanca
+                            Nearshore Park, Rabat Technopolis</span> et <span class="master">Fès
+                            Shore</span> avec un
+                        taux d’insertion de 100% des étudiants dans des multinationales : <span
+                            class="master">Capgemini, CGI Tcehnologies, Atos,
+                            Cegedim et Accenture.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
 
+        <div class="training-education">
+            <div class="container">
+                <p>Formation MQL 2007 - 2019</p>
 
-    <div class="partners">
-        <div class="container">
-            <h3 class="professeurs">Les différents Partenaires</h3>
+                <div class="card formation-mql">
+                    <p class="nbr">12</p>
+                    <p class="desc">Années d’existence</p>
+                </div>
+                <div class="card formation-mql">
+                    <p class="nbr">350+</p>
+                    <p class="desc">Etudiants</p>
+                </div>
+                <div class="card formation-mql">
+                    <p class="nbr">215+</p>
+                    <p class="desc">Contrats CDI</p>
+                </div>
+                <div class="card formation-mql">
+                    <p class="nbr">20+</p>
+                    <p class="desc">Entreprises</p>
+                </div>
+            </div>
+        </div>
 
-            <div class="card card-hover">
-                <img id="capgemini_logo" src="images/capgemini_logo_transparent.svg.png" />
+        <div class="training-content">
+            <div class="container">
+                <h3 class="professeurs">Contenu de la formation</h3>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <div class="semester">
+                                <p>Semestre - 1</p>
+                            </div>
+                        </div>
+                        <div class="flip-box-back">
+                            <p><strong>M1 :</strong> Ingénierie de l’Objet et Technologie Java</p>
+                            <p><strong>M2 :</strong> Technologie XML</p>
+                            <p><strong>M3 :</strong> Génie Logiciel & Modélisation UML</p>
+                            <p><strong>M4 :</strong> Bases de données</p>
+                            <p><strong>M5 :</strong> Audit & Qualité du Logiciel</p>
+                            <p><strong>M6 :</strong> Communication Professionnelle</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <div class="semester">
+                                <p>Semestre - 2</p>
+                            </div>
+
+                        </div>
+                        <div class="flip-box-back">
+                            <p><strong>M1 :</strong> Design Patterns</p>
+                            <p><strong>M2 :</strong> Ingénierie du Web</p>
+                            <p><strong>M3 :</strong> Architecture Java EE</p>
+                            <p><strong>M4 :</strong> Technologies Mobiles</p>
+                            <p><strong>M5 :</strong> Portails d’entreprises</p>
+                            <p><strong>M6 :</strong> Gestion de projets & Méthodes Agiles</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <div class="semester">
+                                <p>Semestre - 3</p>
+                            </div>
+
+                        </div>
+                        <div class="flip-box-back">
+                            <p><strong>M1 :</strong> Frameworks Java EE</p>
+                            <p><strong>M2 :</strong> Plateforme Applicative Microsoft</p>
+                            <p><strong>M3 :</strong> Outils d’industrialisation & environnement Offshore</p>
+                            <p><strong>M4 :</strong> Business Intelligence & Big Data</p>
+                            <p><strong>M5 :</strong> Cloud Computing</p>
+                            <p><strong>M6 :</strong> Culture d’entreprise</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <div class="semester">
+                                <p>Semestre - 4</p>
+                            </div>
+
+                        </div>
+                        <div class="flip-box-back">
+                            <p style="margin-top: 35%; text-align: center;">Stage pré-embauche dans des multinationales
+                                actives en développement
+                                offshore.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="card card-hover">
-                <img id="atos_logo" src="images/atos.png" />
-            </div>
+        </div>
 
-            <div class="card card-hover">
-                <img id="cgi_logo" src="images/cgi_logo_transparent.svg.png" />
-            </div>
 
-            <div class="card card-hover">
-                <img id="umanis_logo" src="images/logoUmanis.png" />
-            </div>
 
-            <div class="card card-hover">
-                <img id="cegedim_logo" src="images/cegdem.png" />
-            </div>
+        <div class="partners">
+            <div class="container">
+                <h3 class="professeurs">Les différents Partenaires</h3>
 
-            <div class="card card-hover">
-                <img id="accenture_logo" src="images/accenture.png" />
-            </div>
+                <div class="card card-hover">
+                    <img id="capgemini_logo" src="images/capgemini_logo_transparent.svg.png" />
+                </div>
 
-            <div class="see-more">
-                <p><a href="html/partenaires.html">Voir plus</a></p>
+                <div class="card card-hover">
+                    <img id="atos_logo" src="images/atos.png" />
+                </div>
+
+                <div class="card card-hover">
+                    <img id="cgi_logo" src="images/cgi_logo_transparent.svg.png" />
+                </div>
+
+                <div class="card card-hover">
+                    <img id="umanis_logo" src="images/logoUmanis.png" />
+                </div>
+
+                <div class="card card-hover">
+                    <img id="cegedim_logo" src="images/cegdem.png" />
+                </div>
+
+                <div class="card card-hover">
+                    <img id="accenture_logo" src="images/accenture.png" />
+                </div>
+
+                <div class="see-more">
+                    <p><a href="html/partenaires.html">Voir plus</a></p>
+                </div>
             </div>
         </div>
     </div>
-    </div>
-<!--    Contactus Component      -->
-    <div  style="display: none" id="contactus-page" class="page-hide contactus"  >
+    <!--    Contactus Component      -->
+    <div style="display: none" id="contactus-page" class="page-hide contactus">
         <div class="container">
             <div class="find-us">
                 <p class="section-title">Trouvez nous <img src="icons/maps-and-flags (2).png" /></p>
@@ -293,18 +291,20 @@
 
         </div>
     </div>
-<!--    Laureats Component-->
-    <div  style="display: none" class="page-hide" id="allAureats">
+    <!--    Laureats Component-->
+    <div style="display: none" class="page-hide" id="allAureats">
     </div>
+
     <footer>
 
         <div class="body-container">
             <div class="display-inline-block">
                 <div></div>
                 <div>
-                    <img src="images/MQLTransaprent.png" style="width: 300px"/>
+                    <img src="images/MQLTransaprent.png" style="width: 300px" />
                     <p class="description-master">
-                        Le master <span class="mql" style="font-size: 14px;"><b>MQL</b></span> est une véritable plateforme
+                        Le master <span class="mql" style="font-size: 14px;"><b>MQL</b></span> est une véritable
+                        plateforme
                         de
                         formation et de production de la ressource humaine très
                         hautement qualifiée en ingénierie du logiciel. Le Master permet à l’étudiant d’une part
@@ -344,7 +344,7 @@
         </div>
         <div class="footer-container">
             <div class="footer-content">
-                <span style="font-size: 18px; font-weight: bold; font-style: italic;">/</span> &copy; 2020 - MQL Fès 
+                <span style="font-size: 18px; font-weight: bold; font-style: italic;">/</span> &copy; 2020 - MQL Fès
             </div>
             <div class="footer-content social-icons">
                 <div class="social-icon"><img src="icons/facebook.png" /></div>
