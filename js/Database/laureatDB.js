@@ -64,7 +64,7 @@ var laureatDb=[
         id:7,
         firstName:"Youness",
         lastName:"Mouhim",
-        promo:"2016",
+        promo:"2016-2018",
         ville:"--",
         society:"Umanis",
         location:"maroc",

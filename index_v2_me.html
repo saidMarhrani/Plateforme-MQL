@@ -9,9 +9,21 @@
     <link rel="stylesheet" href="css/footer_me.css" type="text/css" />
     <link rel="stylesheet" href="css/header_me.css" type="text/css" />
     <link rel="stylesheet" href="css/contactus.css" />
+    <!--                    Laureat Style                           -->
+    <link rel="stylesheet" href="css/laureats.css" type="text/css" />
+<!--Navigation script-->
+    <script src="js/navigation.js"></script>
+<!--               Laureat Scripts                    -->
+    <script src="js/Database/laureatDB.js"></script>
+    <script src="js/models/laureat.js"></script>
+    <script src="js/services/laureatService.js"></script>
+    <script src="js/views/laureatComponent.js"></script>
+    <script src="js/laureatMains.js"></script>
+
+
 </head>
 
-<body>
+<body >
     <header>
         <nav>
 
@@ -20,7 +32,7 @@
                 <label for="check" class="checkbtn">
                     <img src="icons/hamburger.png">
                 </label>
-                <a href="index.html" class="logo">
+                <a href="#" class="logo" onclick="goToPage('index-page')">
                     <img src="images/MQLTransaprent.png" alt="logo" style="width: 100px; height: 50px;" />
                 </a>
                 <ul>
@@ -28,10 +40,10 @@
 <!--                        <a href="index.html">-->
 <!--                            <img src="images/MQLTransaprent.png" alt="logo" style="width: 100px; height: 50px;" /></a>-->
 <!--                    </li>-->
-                    <li><a class="first-a-level" href="html/evenements.html">Evénements</a></li>
-                    <li><a class="first-a-level" href="html/laureats.html">Lauréats</a></li>
-                    <li><a class="first-a-level" href="html/training.html">Stage Pré-embauche</a></li>
-                    <li><a class="first-a-level" href="html/contactus.html">Contactez-nous</a></li>
+                    <li><a class="first-a-level " href="#" onclick="goToPage('event-page')">Evénements</a></li>
+                    <li><a class="first-a-level " href="#" onclick="goToPage('allAureats')">Lauréats</a></li>
+                    <li><a class="first-a-level " href="#" onclick="goToPage('stage-page')">Stage Pré-embauche</a></li>
+                    <li><a class="first-a-level " href="#" onclick="goToPage('contactus-page')">Contactez-nous</a></li>
                     <li id="li-lang">
                         <a class="a-flag" href="#">
                             <img src="icons/uk.png" class="img-size lang" />
@@ -44,7 +56,8 @@
             </div>
         </nav>
     </header>
-<div style="display: none" class="index">
+<!--    Index Component    -->
+<div  id="index-page" class="page-hide">
     <div class="background_image">
         <div class="container">
             <p class="header-title">Start getting knowledge with ...
@@ -245,7 +258,8 @@
         </div>
     </div>
     </div>
-    <div  class="contactus" >
+<!--    Contactus Component      -->
+    <div  style="display: none" id="contactus-page" class="page-hide contactus"  >
         <div class="container">
             <div class="find-us">
                 <p class="section-title">Trouvez nous <img src="icons/maps-and-flags (2).png" /></p>
@@ -278,6 +292,9 @@
             </div>
 
         </div>
+    </div>
+<!--    Laureats Component-->
+    <div  style="display: none" class="page-hide" id="allAureats">
     </div>
     <footer>
 
@@ -338,6 +355,7 @@
         </div>
 
     </footer>
+
 
 </body>
 

@@ -80,7 +80,7 @@ LaureatComponent.prototype.buildFirstContainer = function () {
 };
 
 LaureatComponent.prototype.buildLaureatDiv = function (laureat) {
-    var imgUrl = "../images/laureats/";
+    var imgUrl = "images/laureats/";
     var imgElement = this.buildElement("img",undefined,undefined,imgUrl +laureat.image);
     var imgDiv = this.buildElement("div",undefined,"laureat-img");
     var h2Element = this.buildElement("h2",laureat.lastName+" "+laureat.firstName);
@@ -91,6 +91,7 @@ LaureatComponent.prototype.buildLaureatDiv = function (laureat) {
     var psociety = this.buildElement("p","Société : ");
     var spanociety = this.buildElement("span",laureat.society);
 
+    var plusButton = this.buildElement("button","Plus...");
     // var pville = this.buildElement("p","Ville : ");
     // var spanville = this.buildElement("span",laureat.ville);
 
@@ -105,6 +106,8 @@ LaureatComponent.prototype.buildLaureatDiv = function (laureat) {
     divInfo.appendChild(h2Element);
     divInfo.appendChild(pPromo);
     divInfo.appendChild(psociety);
+    //                  A revoire apres********************************/////////////////
+    //divInfo.appendChild(plusButton);
     // divInfo.appendChild(pville);
 
     laureatDiv.appendChild(imgDiv);
@@ -145,7 +148,7 @@ LaureatComponent.prototype.filterBySociety = function (society) {
     console.log( this.service.laureats);
 }
 LaureatComponent.prototype.filterByPromo = function (promo) {
-
+    console.log(promo);
     console.log( this.service.laureats);
     this.service.setLaureats(this.service.filterByPromo(promo));
     this.updateSecondContainer();

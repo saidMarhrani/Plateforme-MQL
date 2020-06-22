@@ -37,29 +37,40 @@ LaureatService.prototype.load = function () {
 };
 LaureatService.prototype.filterByPromo = function (promo) {
     this.load();
-    console.log(this.laureats);
-    this.laureats = this.laureats.filter(function (laureat) {
-        return laureat.promo.toLowerCase() == promo.toLowerCase();
-    });
+    if(promo!="Promotion")
+    {
+
+        console.log(this.laureats);
+        this.laureats = this.laureats.filter(function (laureat) {
+            return laureat.promo == promo;
+        });
+        console.log(this.laureats);
+        return this.laureats;
+    }
     return this.laureats;
-
-
 }
 LaureatService.prototype.filterBySociety = function (society) {
 
     this.load();
-    console.log(this.laureats);
-    this.laureats = this.laureats.filter(function (laureat) {
-        return laureat.society.toLowerCase() == society.toLowerCase();
-    });
+    if(society!="society")
+    {
+        console.log(this.laureats);
+        this.laureats = this.laureats.filter(function (laureat) {
+            return laureat.society.toLowerCase() == society.toLowerCase();
+        });
+    }
     return this.laureats;
+
 };
 LaureatService.prototype.filterByLocation = function (location) {
     this.load();
-    console.log(this.laureats);
-    this.laureats = this.laureats.filter(function (laureat) {
-        return laureat.location.toLowerCase() == location.toLowerCase();
-    });
+    if(location!="location")
+    {
+        console.log(this.laureats);
+        this.laureats = this.laureats.filter(function (laureat) {
+            return laureat.location.toLowerCase() == location.toLowerCase();
+        });
+    }
     return this.laureats;
 }
 LaureatService.prototype.checkSelect = function () {

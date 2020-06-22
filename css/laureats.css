@@ -1,12 +1,10 @@
-body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    width: 100%;
-    height: 800px;
-    min-height: calc(100vh - 90 - 410);
+#allAureats{
+    background-color: white;
+    padding-top: 10%;
+    padding-bottom: 5%;
 }
-
 .container{
-    margin: 30px 100px;
+    margin-left: 1%;
 }
 
 .inline{
