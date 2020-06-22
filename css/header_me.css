@@ -161,7 +161,7 @@
     body .bar-menu ul{
         position: absolute;
         width: 90%;
-        height: 40vh;
+        /* height: 40vh; */
         margin-left: 5%;
         background: #2c3e50;
         top: 80px;
