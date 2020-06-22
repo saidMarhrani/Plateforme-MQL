@@ -284,3 +284,130 @@ body {
   opacity: 0.9;
 }
 
+@media (max-width: 1100px) {
+  .slideshow-container{
+    padding: 0px 0px;
+    width: 100%;
+  }
+  
+  .form-div{
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px 20px;
+  }
+
+  .form-div > form > div{
+    width: 20%;
+    margin-right: 50px;
+    display: inline-block;
+  }
+  .search-btn{
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 950px) {
+
+  .container{
+    margin: 0px 20px;
+  }
+  
+  .slideshow-container, .dot{
+    display: none;
+    position: absolute;
+  }
+  
+  .form-div{
+    margin-top: 10px;
+    padding: 20px 20px;
+  }
+
+  .form-div > form > div{
+    display: inline-block;
+  }
+  .search-btn{
+    display: block;
+    margin-top: 10px;
+  }
+
+  .event-element {
+    margin-right: 10px;
+    width: 340px;
+  }
+
+  .events > p{
+    font-size: 16px;
+  }
+  
+}
+
+@media (max-width: 750px) {
+
+  .container{
+    margin: 0px 20px;
+  }
+  
+  .slideshow-container, .dot{
+    display: none;
+    position: absolute;
+  }
+  
+  .events > .event-element{
+    margin: 20px 80px;
+  }
+  
+  .form-div{
+    margin-top: 10px;
+    padding: 20px 20px;
+  }
+
+  .form-div > form > div{
+    display: inline-block;
+  }
+  .search-btn{
+    display: block;
+    margin-top: 10px;
+  }
+
+  .event-element {
+    margin-right: 20px;
+    width: 440px;
+  }
+
+  .events > p{
+    font-size: 16px;
+    margin: 5px 20px;
+    border-bottom: 0px;
+    line-height: 2;
+  }
+  
+}
+
+@media (max-width: 750px) {
+  .container{
+    margin: 0px 20px;
+  }
+  
+  .slideshow-container, .dot{
+    display: none;
+    position: absolute;
+  }
+  
+  .events > .event-element{
+    margin: 20px 40px;
+  }
+  
+  .form-div{
+    margin-top: 10px;
+    padding: 20px 20px;
+    width: 560px !important;
+  }
+  
+  .events > p{
+    font-size: 13px;
+    margin: 5px 20px;
+    width: 160%;
+    line-height: 2;
+  }
+}
