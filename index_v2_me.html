@@ -9,8 +9,12 @@
     <link rel="stylesheet" href="css/footer_me.css" type="text/css" />
     <link rel="stylesheet" href="css/header_me.css" type="text/css" />
     <link rel="stylesheet" href="css/contactus.css" />
-    <!--                    Laureat Style                           -->
+    <!--                    Laureat Style                            -->
     <link rel="stylesheet" href="css/laureats.css" type="text/css" />
+    <!--                    Training Style                           -->
+    <link rel="stylesheet" href="css/training.css" type="text/css"/>
+<!--                            Event Style                          -->
+    <link rel="stylesheet" href="css/evenements.css" type="text/css" />
     <!--Navigation script-->
     <script src="js/navigation.js"></script>
     <!--               Laureat Scripts                    -->
@@ -19,6 +23,18 @@
     <script src="js/services/laureatService.js"></script>
     <script src="js/views/laureatComponent.js"></script>
     <script src="js/laureatMains.js"></script>
+    <!--               Training Scripts                    -->
+    <script src="js/Database/trainingDB.js"></script>
+    <script src="js/models/training.js"></script>
+    <script src="js/services/trainingService.js"></script>
+    <script src="js/views/trainingComponent.js"></script>
+    <script src="js/trainingMain.js"></script>
+<!--                        Event Script                   -->
+    <script src="js/Database/eventDB.js"></script>
+    <script src="js/models/event.js"></script>
+    <script src="js/services/eventService.js"></script>
+    <script src="js/views/eventComponent.js"></script>
+    <script src="js/eventMain.js"></script>
 
 
 </head>
@@ -42,7 +58,7 @@
                     <!--                    </li>-->
                     <li><a class="first-a-level " href="#" onclick="goToPage('event-page')">Evénements</a></li>
                     <li><a class="first-a-level " href="#" onclick="goToPage('allAureats')">Lauréats</a></li>
-                    <li><a class="first-a-level " href="#" onclick="goToPage('stage-page')">Stage Pré-embauche</a></li>
+                    <li><a class="first-a-level " href="#" onclick="goToPage('training')">Stage Pré-embauche</a></li>
                     <li><a class="first-a-level " href="#" onclick="goToPage('contactus-page')">Contactez-nous</a></li>
                     <li id="li-lang">
                         <a class="a-flag" href="#">
@@ -57,7 +73,7 @@
         </nav>
     </header>
     <!--    Index Component    -->
-    <div id="index-page" class="page-hide">
+    <div  id="index-page" class="page-hide">
         <div class="background_image">
             <div class="container">
                 <p class="header-title">Start getting knowledge with ...
@@ -294,7 +310,83 @@
     <!--    Laureats Component-->
     <div style="display: none" class="page-hide" id="allAureats">
     </div>
+    <!-- Training Component -->
+    <div style="display: none" id="training" class="page-hide">
+    </div>
 
+    <!--    Event Component-->
+    <div style="display: none" id="event-page"       class="page-hide">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="images/IMG_3028.JPG" style="width:100%">
+                <div class="text">Anniversaire Monsieur Chenfour</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="images/SAM_1861.JPG" style="width:100%">
+                <div class="text">Session de recrutement Capgemini</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="images/session_umanis2.jpeg" style="width:100%">
+                <div class="text">Session de recrutement Umanis</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="images/laureats.jpg" style="width:100%">
+                <div class="text">Cérémonie de Remise des Diplômes</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+
+        <div class="allEvents">
+
+        </div>
+    </div>
     <footer>
 
         <div class="body-container">

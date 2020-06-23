@@ -1,17 +1,13 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
 
-body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    height: 100%;
-}
-.container{
-    margin: 0px 100px 30px 100px;
-}
+/*.container{*/
+/*    margin: 0px 100px 30px 100px;*/
+/*}*/
+#training{
+    background-color: white;
+    padding-top: 8%;
+    padding-bottom: 5%  ;
 
+}
 #where{
     font-weight: bold;
     line-height: 1.6;
@@ -129,10 +125,14 @@ body{
 .inline > div{
     display: inline-block;
     position: relative;
+    margin-left: 2%;
+    margin-right: -3%;
+
 }
 
 .trainings{
     width: 50%;
+    margin-top: 2%;
 }
 
 .trainings > p{
@@ -205,7 +205,7 @@ body{
     min-width: 40%;
     float: right;
     right: 8%;
-    margin-top: 4%;
+    margin-top: 6%;
     border: 1px solid #ccc;
     padding: 20px;
     line-height: 1.5;
@@ -259,12 +259,17 @@ body{
     margin-top: 10px;
     width: 92%;
 }
+@media (max-width: 1000px){
+    #training{
+        padding-top: 15%;
+    }
+}
 
 @media (max-width: 1100px) {
 
-    .container{
-        margin: 0px 20px 30px 50px;
-    }
+    /*.container{*/
+    /*    margin: 0px 20px 30px 50px;*/
+    /*}*/
     
     .trainings > p{
         font-size: 12px;
@@ -327,8 +332,9 @@ body{
 
 @media (max-width: 700px) {
 
-    .container{
-        margin: 0px 20px 30px 20px;
+    .inline > div{
+        margin-top: 5%;
+        width: 95%;
     }
 
     .trainings{

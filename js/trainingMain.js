@@ -1,4 +1,4 @@
-function main() {
+function Trainingmain() {
     this.service = new trainingService();
     this.service.load();
 

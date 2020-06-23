@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evénements</title>
+
+    <link rel="stylesheet" href="../css/evenements.css" type="text/css" />
+
+</head>
+
+<body>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="Plateforme-MQL/images/IMG_3028.JPG" style="width:100%">
+            <div class="text">Anniversaire Monsieur Chenfour</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="Plateforme-MQL/images/SAM_1861.JPG" style="width:100%">
+            <div class="text">Session de recrutement Capgemini</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="Plateforme-MQL/images/session_umanis2.jpeg" style="width:100%">
+            <div class="text">Session de recrutement Umanis</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="Plateforme-MQL/images/laureats.jpg" style="width:100%">
+            <div class="text">Cérémonie de Remise des Diplômes</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+    <div class="container">
+
+        <div class="form-div">
+            <form>
+                <div class="date from">
+                    <p>De</p>
+                    <input type="date" />
+                </div>
+                <div class="date to">
+                    <p>A</p>
+                    <input type="date" />
+                </div>
+                <div class="select-style">
+                    <select>
+                        <option value="#">Catégorie</option>
+                        <option value="compagne_stage">Compagne de stage</option>
+                        <option value="test_psychotechnique">Tests psychotechniques</option>
+                        <option value="test_technique">Tests Techniques</option>
+                        <option value="entretien">Entretiens</option>
+                        <option value="remise_diplome">Remise des Diplomes</option>
+                    </select>
+                </div>
+                <button class="search-btn">Rechercher</button>
+            </form>
+
+        </div>
+        <!-- <hr /> -->
+        <div class="events">
+
+            <p>
+                Sélectionnez vos dates et découvrez les événements organisés par les MQListes.
+            </p>
+
+            <div class="event-element">
+                <div class="event-img">
+                    <img src="Plateforme-MQL/images/events/md-duran-rE9vgD_TXgM-unsplash.jpg" />
+                </div>
+                <div class="event-info">
+                    <p>University in color : Holi Concert</p>
+                    <p class="event-cat">Categorie</p>
+                    <span class="date-event"><img src="Plateforme-MQL/icons/calendar.png" class="icon-event" /> 20-05-2020</span>
+                    <!-- <span class="date-event category-event"><img class="icon-event" src="../icons/list.png" />
+                        categorie</span> -->
+                </div>
+            </div>
+            <div class="event-element">
+                <div class="event-img">
+                    <img src="Plateforme-MQL/images/events/elena-de-soto-w423NnHFjFg-unsplash.jpg" />
+                </div>
+                <div class="event-info">
+                    <p>University in color : Holi Concert</p>
+                    <p class="event-cat">Categorie</p>
+                    <span class="date-event"><img src="Plateforme-MQL/icons/calendar.png" class="icon-event" /> 20-05-2020</span>
+                    <!-- <span class="date-event category-event"><img class="icon-event" src="../icons/list.png" />
+                        categorie</span> -->
+                </div>
+            </div>
+            <div class="event-element">
+                <div class="event-img">
+                    <img src="Plateforme-MQL/images/events/nicholas-green-nPz8akkUmDI-unsplash.jpg" />
+                </div>
+                <div class="event-info">
+                    <p>University in color : Holi Concert</p>
+                    <p class="event-cat">Categorie</p>
+                    <span class="date-event"><img src="Plateforme-MQL/icons/calendar.png" class="icon-event" /> 20-05-2020</span>
+                    <!-- <span class="date-event category-event"><img class="icon-event" src="../icons/list.png" />
+                        categorie</span> -->
+                </div>
+            </div>
+            <div class="event-element">
+                <div class="event-img">
+                    <img src="Plateforme-MQL/images/events/noiseporn-JNuKyKXLh8U-unsplash.jpg" />
+                </div>
+                <div class="event-info">
+                    <p>University in color : Holi Concert</p>
+                    <p class="event-cat">Categorie</p>
+                    <span class="date-event"><img src="Plateforme-MQL/icons/calendar.png" class="icon-event" /> 20-05-2020</span>
+                    <!-- <span class="date-event category-event"><img class="icon-event" src="../icons/list.png" />
+                        categorie categorie categorie
+                    </span> -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

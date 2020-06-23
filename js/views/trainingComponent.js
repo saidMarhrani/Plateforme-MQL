@@ -1,7 +1,7 @@
 function trainingComponent(service)
 {
     this.service = service;
-    this.container = document.getElementsByClassName("container")[0];
+    this.container = document.getElementById("training")
 
 
 }
@@ -56,7 +56,7 @@ trainingComponent.prototype.buildSerachCity = function()
     var pElement2 = this.buildElement("p",undefined,"Ville ou région",["id"],["city"]);
     var inputElement = this.buildElement("input","input-city",undefined,["type"],["text"]);
     var imgElement = this.buildElement("img","map-icon",undefined,
-        ["width","height","src"],["15px","15px","../icons/maps-and-flags (2).png"]);
+        ["width","height","src"],["15px","15px","icons/maps-and-flags (2).png"]);
     var buttElement = this.buildElement("button","search-btn","Rechercher");
     divSearchCity.appendChild(pElement);
     divSearchCity.appendChild(pElement2);

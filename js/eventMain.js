@@ -1,4 +1,4 @@
-function main() {
+function Eventmain() {
     this.service = new eventService();
     this.service.load();
     this.component = new eventComponent(this.service);

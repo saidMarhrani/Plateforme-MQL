@@ -1,4 +1,4 @@
-function main() {
+function Laureatmain() {
     this.service = new LaureatService();
     this.service.load();
     this.component = new  LaureatComponent(service);

@@ -3,9 +3,9 @@
     padding-top: 10%;
     padding-bottom: 5%;
 }
-.container{
-    margin-left: 1%;
-}
+/*.container{*/
+/*    margin-left: 1%;*/
+/*}*/
 
 .inline{
     display: inline-block;
@@ -153,9 +153,9 @@
     /* .laureats{
         margin-left: 40px;
     } */
-    .container{
-        margin: 10px 20px !important;
-    }
+    /*.container{*/
+    /*    margin: 10px 20px !important;*/
+    /*}*/
 }
 
 @media (max-width: 750px){
@@ -166,9 +166,9 @@
         display: block;
         margin-bottom: 30px !important;
     }
-    .container{
-        margin: 10px 20px !important;
-    }
+    /*.container{*/
+    /*    margin: 10px 20px !important;*/
+    /*}*/
     .laureats{
         margin: 10px 0px 10px 20px;
         transition: 0.3s ease-in-out;
@@ -214,9 +214,9 @@
         text-align: left;
         margin-bottom: 20px !important;
     }
-    .container{
-        margin: 10px 20px !important;
-    }
+    /*.container{*/
+    /*    margin: 10px 20px !important;*/
+    /*}*/
     
     .select-style {
         margin: 0 5px;

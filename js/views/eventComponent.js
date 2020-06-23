@@ -1,6 +1,6 @@
 function eventComponent(service) {
     this.service = service;
-    this.container = document.getElementsByClassName("container")[0];
+    this.container = document.getElementsByClassName("allEvents")[0];
 }
 eventComponent.prototype.buildElement = function (name,className,content,attributes,values) {
     var element = document.createElement(name);
@@ -77,12 +77,12 @@ eventComponent.prototype.buildEventCard = function (event) {
     console.log(event.date)
     var  divALL= this.buildElement("div","event-element");
     var divImg = this.buildElement("div","event-img");
-    var imgElemet = this.buildElement("img",undefined,undefined,["src"],["../images/events/"+event.image]);
+    var imgElemet = this.buildElement("img",undefined,undefined,["src"],["images/events/"+event.image]);
     divImg.appendChild(imgElemet);
     var divInfo = this.buildElement("div","event-info");
     var pTitle = this.buildElement("p",undefined,event.name);
     var spanElement = this.buildElement("span","date-event");
-    var spanImg = this.buildElement("img","icon-event",undefined,["src"],["../icons/calendar.png"]);
+    var spanImg = this.buildElement("img","icon-event",undefined,["src"],["icons/calendar.png"]);
     var catEventp = this.buildElement("p","event-cat",event.cat);
     var date = document.createTextNode("  "+event.date.getDate()+"-"+event.date.getMonth()+"-"+event.date.getUTCFullYear());
     spanElement.appendChild(spanImg);

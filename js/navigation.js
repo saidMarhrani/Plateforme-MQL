@@ -34,9 +34,31 @@ function goToPage(id)
             if(pageClasses[i].id!=undefined)
             {
                 pageClasses[i].style.display = "block";
-                main();
+                loadData(pageClasses[i].id);
+
             }
         }
+
+    }
+}
+function loadData(pageData) {
+    var divElement = getElementById(pageData);
+    var allEvents= document.getElementsByClassName("allEvents")[0];
+    switch (pageData) {
+        case "allAureats" :
+            divElement.innerHTML="";
+            Laureatmain();
+            break;
+
+        case "training" :
+            divElement.innerHTML="";
+            Trainingmain();
+            break;
+
+        case "event-page" :
+            allEvents.innerHTML="";
+            Eventmain();
+            break;
 
     }
 }
