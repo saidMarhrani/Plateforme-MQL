@@ -32,6 +32,11 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.fes-logo{
+    width: 100px;
+    height: 100px;
+}
+
 .more{
     font-size: 20px;
     top: 80%;
@@ -57,7 +62,7 @@ body{
 }
 
 .nos-prof{
-    padding: 50px 0px 70px 0px;
+    padding: 50px 0px 70px 30px;
     background-color: white;
 }
 
@@ -89,14 +94,22 @@ body{
     font-size: 25px;
 }
 
-.mql{
+.mql-title{
     color: #9d0b0b;
     font-family: Goudy Old Style;
     float: left;
     left: 3px;
     top: -5%;
     letter-spacing: 5px;
-    font-size: 25px;
+    font-size: 56px;
+}
+
+.mql{
+    color: #ee0606c7;
+    font-family: Goudy Old Style;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 32px;
 }
 
 .training{
@@ -175,7 +188,7 @@ body{
     padding: 40px;
     font-weight: bold;
     color: white;
-    text-align: justify;
+    /* text-align: justify; */
     line-height: 2;
     margin-left: 2%;
     margin-left: 2%;
@@ -337,7 +350,7 @@ body{
 
 .card {
     display: inline-block;
-    margin-left: 30px;
+    margin-left: 40px;
     margin-top: 3%;
     padding-bottom: 5%;
 }
@@ -434,8 +447,8 @@ a{
     }
 
     body .more {
-        margin-top: 15%;
-        margin-left: 30%;
+        margin-top: 7%;
+        margin-left: 42%;
     }
 
     body .professeurs {
@@ -444,7 +457,7 @@ a{
     }
 
     body .professeurs:after {
-        margin-left: 33%;
+        margin-left: 38%;
     }
 
     body .card {
@@ -500,6 +513,14 @@ a{
         margin-top: 20%;
         margin-bottom: 10%;
     }
+
+    .training-content > .container >.professeurs::after {
+        margin-left: 29%;
+    }
+    
+    .partners > .container >.professeurs::after {
+        margin-left: 27%;
+    }
 }
 @media (max-width: 530px) {
     body .header-title {
@@ -514,10 +535,30 @@ a{
         margin-right: auto;
     }
 
-    .training > .training-container> .container > p {
-        /* padding: 50px; */
-        text-align: left;
+    .container, .background_image{
+        padding: -50px !important;
     }
+
+    .header-title{
+        padding-left: 0px;
+        font-size: 26px !important;
+    }
+
+    .mql-title{
+        /* float: left;
+        left: 3px;
+        top: -5%; */
+        margin-top: 30px;
+        font-size: 36px !important;
+        text-shadow: 1px 1px 3px black;
+    }
+
+    .fes-logo{
+        margin-top: 10%;
+        width: 60px;
+        height: 60px;
+    }
+
     .training{
         margin-bottom: 5%;
         height: 550px !important;
@@ -527,11 +568,30 @@ a{
         padding: 20px;
         height: 550px !important;
     }
+
+    .training > .training-container> .container{
+        padding: 10px !important;
+        margin: -20px !important;
+    }
+    .training > .training-container> .container > p {
+        /* padding: 50px; */
+        margin-top: 50px !important;
+        text-align: justify;
+        padding: 0px !important;
+    }
+
+    .training-goal-title{
+        margin-top: 30px !important;
+    }
+    
     .professeurs{
         font-size: 20px;
         line-height: 2;
     }
-    
+    .container{
+        padding: 10% !important;
+    }
+
     .professeurs:after {
         margin-left: 0%;
         content: "";
@@ -539,5 +599,8 @@ a{
         width: 0%;
         padding-bottom: 0px;
         border-bottom: 0px solid rgb(27, 74, 105); 
+    }
+    .flip-box{
+        margin-left: -20px !important;
     }
 }
