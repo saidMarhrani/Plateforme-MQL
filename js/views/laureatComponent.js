@@ -40,8 +40,8 @@ LaureatComponent.prototype.buildElement = function (name,content,className,src,a
     // }
     return element;
 };
-LaureatComponent.prototype.buildSelectElement = function(name,className,...options)
-{
+LaureatComponent.prototype.buildSelectElement = function(name,className,...options){
+
     var divSelectElement = this.buildElement("div",undefined,"select-style inline");
     var selectElement = this.buildElement(name,undefined,className);
 
@@ -61,7 +61,7 @@ LaureatComponent.prototype.buildSelectElement = function(name,className,...optio
 
 LaureatComponent.prototype.buildFirstContainer = function () {
     var containerDiv = this.buildElement("div",undefined,"container");
-    var promoSelectDiv = this.buildSelectElement("select","promo","Promotion","2019-2021","2017-2019","2015-2017","2013-2015");
+    var promoSelectDiv = this.buildSelectElement("select","promo","Promotion","2018","2017","2016","2015");
     var locaSelectDiv = this.buildSelectElement("select","location","Lieu","Maroc","Etranger");
         var societySelectDiv = this.buildSelectElement("select","society","Société","Capgemini","CGI FES","Atos","Umanis"
                         ,"Cegedime","Accenture","SQLI");
@@ -88,12 +88,13 @@ LaureatComponent.prototype.buildLaureatDiv = function (laureat) {
     var pPromo = this.buildElement("p","Promo : ");
     var spanPromo = this.buildElement("span",laureat.promo);
 
-    var psociety = this.buildElement("p","Société : ");
+    var psociety = this.buildElement("p","Society : ");
     var spanociety = this.buildElement("span",laureat.society);
 
     var plusButton = this.buildElement("button","Plus...");
-    // var pville = this.buildElement("p","Ville : ");
-    // var spanville = this.buildElement("span",laureat.ville);
+
+    var pville = this.buildElement("p","Ville : ");
+    var spanville = this.buildElement("span",laureat.location);
 
     var divInfo = this.buildElement("div",undefined,"laureat-info");
 
@@ -101,14 +102,15 @@ LaureatComponent.prototype.buildLaureatDiv = function (laureat) {
     imgDiv.appendChild(imgElement);
     pPromo.appendChild(spanPromo);
     psociety.appendChild(spanociety);
-    // pville.appendChild(spanville);
+    pville.appendChild(spanville);
 
     divInfo.appendChild(h2Element);
     divInfo.appendChild(pPromo);
     divInfo.appendChild(psociety);
     //                  A revoire apres********************************/////////////////
-    //divInfo.appendChild(plusButton);
-    // divInfo.appendChild(pville);
+
+    divInfo.appendChild(pville);
+    divInfo.appendChild(plusButton);
 
     laureatDiv.appendChild(imgDiv);
     laureatDiv.appendChild(divInfo);
