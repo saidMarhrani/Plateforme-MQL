@@ -88,7 +88,7 @@ LaureatComponent.prototype.buildLaureatDiv = function (laureat) {
     var pPromo = this.buildElement("p","Promo : ");
     var spanPromo = this.buildElement("span",laureat.promo);
 
-    var psociety = this.buildElement("p","Society : ");
+    var psociety = this.buildElement("p","");
     var spanociety = this.buildElement("span",laureat.society);
 
     var plusButton = this.buildElement("button","Plus...");
@@ -100,16 +100,16 @@ LaureatComponent.prototype.buildLaureatDiv = function (laureat) {
 
     var laureatDiv = this.buildElement("div",undefined,"laureats");
     imgDiv.appendChild(imgElement);
-    pPromo.appendChild(spanPromo);
+    // pPromo.appendChild(spanPromo);
     psociety.appendChild(spanociety);
-    pville.appendChild(spanville);
+    // pville.appendChild(spanville);
 
     divInfo.appendChild(h2Element);
-    divInfo.appendChild(pPromo);
+    // divInfo.appendChild(pPromo);
     divInfo.appendChild(psociety);
     //                  A revoire apres********************************/////////////////
 
-    divInfo.appendChild(pville);
+    // divInfo.appendChild(pville);
     divInfo.appendChild(plusButton);
 
     laureatDiv.appendChild(imgDiv);

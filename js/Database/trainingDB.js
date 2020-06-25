@@ -15,7 +15,7 @@ trainingDB = [
         date:new Date(2019,1,25),
         contratType:"stage",
         society:"capgemini",
-        salary:"1500"
+        salary:"7500"
     },
     {
         title: "Stape pré-embauche développeur web",

@@ -43,10 +43,11 @@
     box-shadow: 1px 1px 2px #ccc;
 }
 .find-us-address > h2{
-    color: rgb(90, 88, 100);
+    color: #0a0a0a;
     letter-spacing: 2px;
     word-spacing: 5px;
-    font-size: 22px;
+    font-size: 24px;
+    font-weight: normal;
     padding-bottom: 15px;
     /*position: relative;*/
     z-index : 1;
@@ -55,9 +56,9 @@
 .find-us-address > h2:after {
     content: "";
     display: block;
-    width: 10%;
+    width: 15%;
     padding-bottom: 3px;
-    border-bottom: 3px solid rgb(12, 10, 155); 
+    border-bottom: 3px solid rgb(32, 32, 32); 
 }
 .find-us-address > p > img {
     width: 15px; 

@@ -216,11 +216,13 @@ body{
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    /* border: 3px solid rgb(75, 131, 163); */
 }
 
 .card-header{
-    margin-left: 90px !important;
-    padding: 20px 30px;
+    margin-top: 20px;
+    margin-left: 80px !important;
+    width: 280px;
 }
 
 .card-body{
