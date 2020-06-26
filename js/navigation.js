@@ -19,7 +19,7 @@ function addActiveClass(id) {
 
 function goToPage(id)
 {
-    var menu = getElementById("menu-bar");
+    var check = getElementById("check");
     var pageClasses = document.getElementsByClassName("page-hide");
     for(var i in pageClasses)
     {
@@ -39,8 +39,9 @@ function goToPage(id)
         }
 
     }
-    // menu.style.left="0";
-    console.log(menu.style.left);
+    check.checked=false;
+
+
 }
 function loadData(pageData) {
     var divElement = getElementById(pageData);

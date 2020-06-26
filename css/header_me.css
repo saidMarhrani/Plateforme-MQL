@@ -218,9 +218,7 @@
     #check:checked ~ ul{
         left: 0;
     }
-    body .bar-menu ul li a:checked ~ ul{
-        left: 0;
-    }
+
 
 }
 
