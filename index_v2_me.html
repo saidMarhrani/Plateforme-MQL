@@ -10,12 +10,14 @@
     <link rel="stylesheet" href="css/header_me.css" type="text/css" />
     <link rel="stylesheet" href="css/contactus.css" />
 
-    <!--                    Laureat Style                            -->
+    <!--                        Laureat Style                            -->
     <link rel="stylesheet" href="css/laureats.css" type="text/css" />
-    <!--                    Training Style                           -->
+    <!--                        Training Style                           -->
     <link rel="stylesheet" href="css/training.css" type="text/css"/>
-<!--                            Event Style                          -->
+    <!--                        Event Style                              -->
     <link rel="stylesheet" href="css/evenements.css" type="text/css" />
+    <!--                        Activity Style                           -->
+    <link rel="stylesheet" href="css/activite.css" type="text/css" />
 
     <!--                        Navigation script                    -->
     <script src="js/navigation.js"></script>
@@ -55,7 +57,7 @@
                 <a href="#" class="logo" onclick="goToPage('index-page')">
                     <img src="images/MQLTransaprent.png" alt="logo" style="width: 100px; height: 50px;" />
                 </a>
-                <ul>
+                <ul id="menu-bar">
                     <!--                    <li>-->
                     <!--                        <a href="index.html">-->
                     <!--                            <img src="images/MQLTransaprent.png" alt="logo" style="width: 100px; height: 50px;" /></a>-->
@@ -63,6 +65,7 @@
                     <li><a class="first-a-level " href="#" onclick="goToPage('event-page')">Evénements</a></li>
                     <li><a class="first-a-level " href="#" onclick="goToPage('allAureats')">Lauréats</a></li>
                     <li><a class="first-a-level " href="#" onclick="goToPage('training')">Stage Pré-embauche</a></li>
+                    <li><a class="first-a-level " href="#" onclick="goToPage('activity-page')">Activities</a></li>
                     <li><a class="first-a-level " href="#" onclick="goToPage('contactus-page')">Contactez-nous</a></li>
                     <li id="li-lang">
                         <a class="a-flag" href="#">
@@ -392,6 +395,265 @@
         </div>
     </div>
 
+    <!--    Activity Component-->
+    <div style="display: none"  id="activity-page" class="page-hide">
+        <div class="background-reader">
+            <p class="all-activities">It always seems impossible until it’s done.</p>
+            <!-- <p class="container">Things do not happen. Things are made to happen</p> -->
+            <!-- <p class="container">It always seems impossible until it’s done</p> -->
+        </div>
+
+        <div class="all-activities">
+
+            <div class="activities">
+
+                <p>Cours</p>
+
+                <div class="activity">
+                    <div calss="activity-img">
+                        <img src="images/Java_Logo.svg.png" class="language"  />
+                    </div>
+                    <div class="activity-infos">
+                        <p class="activity-title">Cours complet Java</p>
+                        <p class="activity-date">2020-05-10</p>
+                        <div class="rate download">
+                            <button>Download</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="activity">
+                    <div calss="activity-img">
+                        <img src="images/oracle-logo.png" class="language" />
+                    </div>
+                    <div class="activity-infos">
+                        <p class="activity-title">Cours Oracle</p>
+                        <p class="activity-date">2020-05-12</p>
+                        <div class="rate download">
+                            <button>Download</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="activity">
+                    <div calss="activity-img">
+                        <img src="images/swing.jpg" class="language" />
+                    </div>
+                    <div class="activity-infos">
+                        <p class="activity-title">Cours Java Swing</p>
+                        <p class="activity-date">2020-06-05</p>
+                        <div class="rate download">
+                            <button>Download</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="activity">
+                    <div calss="activity-img">
+                        <img src="images/dp.jpg" class="language" />
+                    </div>
+                    <div class="activity-infos">
+                        <p class="activity-title">Design Patterns</p>
+                        <p class="activity-date">2020-06-13</p>
+                        <div class="rate download">
+                            <button>Download</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="activity">
+                    <div calss="activity-img">
+                        <img src="images/jee.png" class="language" />
+                    </div>
+                    <div class="activity-infos">
+                        <p class="activity-title">Java EE </p>
+                        <p class="activity-date">2020-02-24</p>
+                        <div class="rate download">
+                            <button>Download</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="activity">
+                    <div calss="activity-img">
+                        <img src="images/big data.png" class="language" />
+                    </div>
+                    <div class="activity-infos">
+                        <p class="activity-title">Big Data </p>
+                        <p class="activity-date">2020-04-13</p>
+                        <div class="rate download">
+                            <button>Download</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="activity">
+                    <div calss="activity-img">
+                        <img src="images/technologies.jpg" class="language"  />
+                    </div>
+                    <div class="activity-infos">
+                        <p class="activity-title">Technologie Web </p>
+                        <p class="activity-date">2020-01-04</p>
+                        <div class="rate download">
+                            <button>Download</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="activities">
+
+                <p>Exercices</p>
+
+                <div class="activity">
+                    <div calss="activity-img">
+                        <img src="images/Oracle.png" class="language" />
+                    </div>
+                    <div class="activity-infos">
+                        <p class="activity-title">TPs Oracle</p>
+                        <p class="activity-date">2020-11-13</p>
+                        <div class="rate download">
+                            <button>Download</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="activity">
+                    <div calss="activity-img">
+                        <img src="images/UML-Class-Diagram-Example-Transparent.png" class="language" />
+                    </div>
+                    <div class="activity-infos">
+                        <p class="activity-title">Exercices UML</p>
+                        <p class="activity-date">2020-12-03</p>
+                        <div class="rate download">
+                            <button>Download</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="activities">
+
+                <p>Test Psychotechnique</p>
+
+                <div class="activity">
+                    <div calss="activity-img">
+                        <img src="images/psychotechnique.jpg" class="language" />
+                    </div>
+                    <div class="activity-infos">
+                        <p class="activity-title">Exercices Psychotechnique</p>
+                        <p class="activity-date">2020-05-10</p>
+                        <div class="rate download">
+                            <button>Download</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="activities">
+
+                <p>Préparer aux entretiens</p>
+
+                <div class="activity">
+                    <div calss="activity-img">
+                        <img src="images/capgemini_logo_transparent.svg.png" class="language" style="height: 160px" />
+                    </div>
+                    <div class="activity-infos">
+                        <p class="activity-title">Capgemini Entretiens</p>
+                        <p class="activity-date">2019-11-03</p>
+                        <div class="rate download">
+                            <button>Download</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="activity">
+                    <div calss="activity-img">
+                        <img src="images/logoUmanis.png" class="language"class="language" style="width: 160px; height: 160px" />
+                    </div>
+                    <div class="activity-infos">
+                        <p class="activity-title">Umanis Entretiens</p>
+                        <p class="activity-date">2019-11-15</p>
+                        <div class="rate download">
+                            <button>Download</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="activity">
+                    <div calss="activity-img">
+                        <img src="images/cgi_logo_transparent.svg.png" class="language" class="language" style="width: 160px; height: 160px" />
+                    </div>
+                    <div class="activity-infos">
+                        <p class="activity-title">CGI Fès entretiens</p>
+                        <p class="activity-date">2019-12-02</p>
+                        <div class="rate download">
+                            <button>Download</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="activity">
+                    <div calss="activity-img">
+                        <img src="images/atos.png" class="language"  />
+                    </div>
+                    <div class="activity-infos">
+                        <p class="activity-title">ATOS Entretiens</p>
+                        <p class="activity-date">2019-11-03</p>
+                        <div class="rate download">
+                            <button>Download</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="activity">
+                    <div calss="activity-img">
+                        <img src="images/accenture.png" class="language"class="language"/>
+                    </div>
+                    <div class="activity-infos">
+                        <p class="activity-title">Accenture Entretiens</p>
+                        <p class="activity-date">2019-11-15</p>
+                        <div class="rate download">
+                            <button>Download</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="activity">
+                    <div calss="activity-img">
+                        <img src="images/cegdem.png" class="language" class="language" />
+                    </div>
+                    <div class="activity-infos">
+                        <p class="activity-title">Cegedim entretiens</p>
+                        <p class="activity-date">2019-12-02</p>
+                        <div class="rate download">
+                            <button>Download</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
     <!-- Footer -->
     <footer>
 

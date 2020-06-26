@@ -164,7 +164,7 @@
 }
 @media (max-width: 1000px ){
     
-    .container{
+    .all-activities{
         padding: 20px 20px;
     }
 
@@ -220,7 +220,7 @@
 }
 
 @media (max-width: 750px){
-    .container{
+    .all-activities{
         padding: 20px 40px;
     }
 
@@ -282,7 +282,7 @@
 }
 
 @media (max-width: 400px){
-    .container{
+    .all-activities{
         padding: 20px 5px !important;
         /* margin-right: 30% !important; */
         margin: 10px 20px !important;

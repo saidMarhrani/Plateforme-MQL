@@ -57,7 +57,7 @@ body{
     border: 2px solid rgb(2, 43, 66);
 }
 
-.container{
+.all-activities{
     margin: 0px;
 }
 
@@ -86,7 +86,7 @@ body{
     font-size: 25px;
 }
 
-.master-goal > .container > p {
+.master-goal > .all-activities > p {
     line-height: 2;
     padding-bottom: 50px;
     word-spacing: 8px;
@@ -180,7 +180,7 @@ body{
     width: 12%;
 }
 
-.training > .training-container> .container > p {
+.training > .training-container> .all-activities > p {
     text-shadow: 2px 2px 2px #293462;
     margin-top: 5%;
     font-size: 25px;
@@ -258,7 +258,7 @@ body{
     background-color: white;
 }
 
-.training-education > .container > p{
+.training-education > .all-activities > p{
     text-align: center;
     font-size: 32px;
     color: rgb(27, 74, 105);
@@ -479,7 +479,7 @@ a{
         height: 100%;
     }
 
-    body .training > .training-container > .container > p {
+    body .training > .training-container > .all-activities > p {
         font-size: 12px;
         margin-left: 5%;
         margin-right: 5%;
@@ -516,11 +516,11 @@ a{
         margin-bottom: 10%;
     }
 
-    .training-content > .container >.professeurs::after {
+    .training-content > .all-activities >.professeurs::after {
         margin-left: 29%;
     }
     
-    .partners > .container >.professeurs::after {
+    .partners > .all-activities >.professeurs::after {
         margin-left: 27%;
     }
 }
@@ -537,7 +537,7 @@ a{
         margin-right: auto;
     }
 
-    .container, .background_image{
+    .all-activities, .background_image{
         padding: -50px !important;
     }
 
@@ -571,11 +571,11 @@ a{
         height: 550px !important;
     }
 
-    .training > .training-container> .container{
+    .training > .training-container> .all-activities{
         padding: 10px !important;
         margin: -20px !important;
     }
-    .training > .training-container> .container > p {
+    .training > .training-container> .all-activities > p {
         /* padding: 50px; */
         margin-top: 50px !important;
         text-align: justify;
@@ -590,7 +590,7 @@ a{
         font-size: 20px;
         line-height: 2;
     }
-    .container{
+    .all-activities{
         padding: 10% !important;
     }
 

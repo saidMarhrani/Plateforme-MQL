@@ -19,14 +19,13 @@ function addActiveClass(id) {
 
 function goToPage(id)
 {
-    console.log(id);
+    var menu = getElementById("menu-bar");
     var pageClasses = document.getElementsByClassName("page-hide");
     for(var i in pageClasses)
     {
         if(pageClasses[i].id!=id && pageClasses[i].id!=undefined)
         {
-            console.log(pageClasses[i].id);
-            console.log(pageClasses[i]);
+
             pageClasses[i].style.display = "none";
         }
         else
@@ -40,6 +39,8 @@ function goToPage(id)
         }
 
     }
+    // menu.style.left="0";
+    console.log(menu.style.left);
 }
 function loadData(pageData) {
     var divElement = getElementById(pageData);
@@ -59,6 +60,7 @@ function loadData(pageData) {
             allEvents.innerHTML="";
             Eventmain();
             break;
+
 
     }
 }

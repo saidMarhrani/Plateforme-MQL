@@ -4,6 +4,7 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
 .checkbtn{
     font-size: 30px;
     color: white;
@@ -179,6 +180,7 @@
         font-size: 20px;
         color: whitesmoke;
     }
+
     body .bar-menu ul li:not(#li-lang) a::after{
         content: '';
         text-align: center;
@@ -214,6 +216,9 @@
         margin: 0px 10px;
     }
     #check:checked ~ ul{
+        left: 0;
+    }
+    body .bar-menu ul li a:checked ~ ul{
         left: 0;
     }
 
