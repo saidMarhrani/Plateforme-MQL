@@ -218,7 +218,15 @@
     #check:checked ~ ul{
         left: 0;
     }
-
-
 }
 
+
+@media only screen and (max-width: 550px) {
+    .bar-menu > .logo > img{
+        position: relative;
+        float: left;
+        top: -10%;
+        left: 10%;
+        /* right: 20% !important; */
+    }
+}
