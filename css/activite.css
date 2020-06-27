@@ -89,14 +89,14 @@
     float: right;
 }
 
-.download > button{
+.download > a > button{
     border: 0px;
     background: #0576a3;
     color: white;
     padding: 10px 30px;
 }
 
-.download > button:hover{
+.download > a > button:hover{
     background: rgb(5, 118, 163 , 0.91);
 }
 @media (max-width: 1021px) {
