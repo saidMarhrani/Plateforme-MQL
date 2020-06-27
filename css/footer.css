@@ -8,7 +8,7 @@ footer {
 }
 
 .body-container{
-    background-color: /* #222831 #30475e #004445 000000*/ #01374b;
+    background-color: #01374b;
 }
 
 .display-inline-block{
@@ -41,7 +41,6 @@ footer {
 .body-content > *{
     display: inline-block;
     line-height: 4;
-    /* border: 1px solid black; */
 }
 
 .mql-footer-logo{
@@ -62,7 +61,6 @@ footer {
     position: relative;
     left: 15px;
     top: -10px;
-    /* width: 60%; */
     font-size: 14px;
 }
 .address{
@@ -146,18 +144,12 @@ footer {
     .footer-container{
         padding: 15px 35px !important;
     }
-    /* .mql-footer-logo{
-        width: 240px;
-        height: 100px;
-    }  */
 }
 
 @media (max-width: 800px){
     .send{
         display: block;
         float: inherit;
-        /* margin-top: 10%; */
-        /* top: 10%; */
         left: 2%;
     }
     .mql-footer-logo{
@@ -197,7 +189,6 @@ footer {
     .send{
         display: block;
         float: inherit;
-        /* margin-top: 10%; */
         top: 10%;
         left: 2%;
     }
