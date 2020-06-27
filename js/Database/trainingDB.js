@@ -1,4 +1,4 @@
-trainingDB = [
+var trainingDB = [
     {
         title: "Stape pré-embauche développeur web",
         city: "casablanca",
