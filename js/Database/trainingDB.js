@@ -6,7 +6,7 @@ trainingDB = [
         date:new Date(2022,2,14),
         contratType:"CDI",
         society:"capgemini",
-        salary:"6000"
+        salary:"12 000"
     },
     {
         title: "Stape pré-embauche développeur web",
@@ -24,7 +24,7 @@ trainingDB = [
         date:new Date(2018,1,25),
         contratType:"CDI",
         society:"atos",
-        salary:"7000"
+        salary:"9000"
     },
     {
         title: "Stape pré-embauche développeur web",
