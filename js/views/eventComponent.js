@@ -54,7 +54,7 @@ eventComponent.prototype.buildForm = function () {
     var inputDiv = this.buildInput("date from","De","date");
     var inputDiv2 = this.buildInput("date to","A","date");
     var selectElement = this.buildSelectElement("select-style inline","catSelect","Catégorie","Competition","Tests psychotechniques"
-    ,"Tests Techniques","Entretiens","Remise des Diplomes");
+    ,"Entretiens","Remise des Diplomes");
     var searchBtn = this.buildElement("button","search-btn","Rechercher");
     formElement.appendChild(inputDiv);
     formElement.appendChild(inputDiv2);

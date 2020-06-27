@@ -8,7 +8,7 @@ var eventDB=[
     {
         name : "Session de recrutement Umanis",
         image : "umanis2.jpg",
-        cat : "Tests Techniques",
+        cat : "Tests psychotechniques",
         date:new Date(2020,11,22)
     },
     {
@@ -20,7 +20,7 @@ var eventDB=[
     {
         name : "Session de recrutement Capgmini",
         image : "cap2.jpg",
-        cat : "Tests Techniques",
+        cat : "Tests psychotechniques",
         date:new Date(2020,1,9)
     },
 
@@ -33,7 +33,7 @@ var eventDB=[
     {
         name : "Session de recrutement CGI FES",
         image : "cgi2.jpg",
-        cat : "Tests Techniques",
+        cat : "Tests psychotechniques",
         date:new Date(2020,1,24)
     },
     {

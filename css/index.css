@@ -133,7 +133,7 @@ body{
 .semester{
     padding: 30px;
     margin-top: 20% !important;
-    margin-left: 40px ;
+    /*margin-left: 40px ;*/
     border: 1px solid rgb(221, 221, 221);
     text-align: center;
     line-height: 2;
@@ -469,7 +469,7 @@ a{
 
     body .card-header {
         margin: 0px auto !important;
-        width: 500px;
+        /*width: 500px;*/
     }
 
     body .training-goal-title {
@@ -507,7 +507,7 @@ a{
         height: 360px;
         display: block;
         margin: 0px auto !important;
-        width: 500px;
+        width: 90%;
     }
     body .card-hover{
         text-align: center;
