@@ -6,8 +6,8 @@ function LaureatComponent(service) {
     this.locaElement = this.get("location");
 }
 
-LaureatComponent.prototype.get = function(className)
-{
+LaureatComponent.prototype.get = function(className){
+
     var element = document.getElementsByClassName(className)[0];
     return element;
 }
@@ -34,10 +34,6 @@ LaureatComponent.prototype.buildElement = function (name,content,className,src,a
     {
         element.setAttribute("src",src);
     }
-    // if(type!==undefined)
-    // {
-    //     element.setAttribute("src",src);
-    // }
     return element;
 };
 LaureatComponent.prototype.buildSelectElement = function(name,className,...options){
@@ -76,7 +72,7 @@ LaureatComponent.prototype.buildFirstContainer = function () {
     containerDiv.appendChild(numberDiv);
     this.body.appendChild(containerDiv);
     var element = document.getElementsByClassName("promo")[0];
-    //element.addEventListener("onchange",this.filterByPromo(element.value));
+
 };
 
 LaureatComponent.prototype.buildLaureatDiv = function (laureat) {
@@ -107,9 +103,7 @@ LaureatComponent.prototype.buildLaureatDiv = function (laureat) {
     divInfo.appendChild(h2Element);
     // divInfo.appendChild(pPromo);
     divInfo.appendChild(psociety);
-    //                  A revoire apres********************************/////////////////
 
-    // divInfo.appendChild(pville);
     divInfo.appendChild(plusButton);
 
     laureatDiv.appendChild(imgDiv);
@@ -144,22 +138,18 @@ LaureatComponent.prototype.updateSecondContainer = function(){
 }
 
 LaureatComponent.prototype.filterBySociety = function (society) {
-    console.log( this.service.laureats);
     this.service.setLaureats(this.service.filterBySociety(society));
     this.updateSecondContainer();
-    console.log( this.service.laureats);
+
 }
 LaureatComponent.prototype.filterByPromo = function (promo) {
-    console.log(promo);
-    console.log( this.service.laureats);
     this.service.setLaureats(this.service.filterByPromo(promo));
     this.updateSecondContainer();
-    console.log( this.service.laureats);
 
 }
 LaureatComponent.prototype.filterByLocation = function (location) {
-    console.log( this.service.laureats);
+
     this.service.laureats=this.service.filterByLocation(location);
     this.updateSecondContainer();
-    console.log( this.service.laureats);
+
 }

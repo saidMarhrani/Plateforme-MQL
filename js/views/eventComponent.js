@@ -20,18 +20,9 @@ eventComponent.prototype.buildElement = function (name,className,content,attribu
 
         element.className = className;
     }
-    // if(src!==undefined)
-    // {
-    //     element.setAttribute("src",src);
-    // }
-    // if(type!==undefined)
-    // {
-    //     element.setAttribute("src",src);
-    // }
     return element;
 };
-eventComponent.prototype.buildSelectElement = function(className,selectClassName,...options)
-{
+eventComponent.prototype.buildSelectElement = function(className,selectClassName,...options){
     var divSelectElement = this.buildElement("div",className);
     var selectElement = this.buildElement("select",selectClassName);
 
@@ -48,8 +39,8 @@ eventComponent.prototype.buildSelectElement = function(className,selectClassName
     divSelectElement.appendChild(selectElement);
     return divSelectElement;
 };
-eventComponent.prototype.buildInput = function(className,content,inputType)
-{
+eventComponent.prototype.buildInput = function(className,content,inputType){
+
     var div=this.buildElement("div",className);
     var pElement = this.buildElement("p",undefined,content);
     var inputElemet = this.buildElement("input",className+" "+content,undefined,["type"],[inputType]);
@@ -74,7 +65,6 @@ eventComponent.prototype.buildForm = function () {
 }
 
 eventComponent.prototype.buildEventCard = function (event) {
-    console.log(event.date)
     var  divALL= this.buildElement("div","event-element");
     var divImg = this.buildElement("div","event-img");
     var imgElemet = this.buildElement("img",undefined,undefined,["src"],["images/events/"+event.image]);

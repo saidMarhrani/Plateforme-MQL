@@ -5,20 +5,7 @@ function addActiveClass(id) {
     var index = getElementById(id);
     index.classList.add("active");
 }
-// function goToIndexPage()
-// {
-//     addActiveClass("index");
-// }
-// function goToContactusPage() {
-//     addActiveClass("")
-// }
-//
-// function goToLaureatsPage() {
-//
-// }
-
-function goToPage(id)
-{
+function goToPage(id) {
     var check = getElementById("check");
     var pageClasses = document.getElementsByClassName("page-hide");
     for(var i in pageClasses)

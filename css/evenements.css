@@ -133,7 +133,7 @@ body {
     font-weight: bold;
     padding: 0;
     margin: 0 15px;
-
+    z-index: 0;
     border: 1px solid #ccc;
     width: 200px;
     border-radius: 3px;

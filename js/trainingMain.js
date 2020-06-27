@@ -36,21 +36,18 @@ function filterByCity(event) {
 
 
 function trie() {
-    console.log(this.value);
     var service = new trainingService();
     var component = new trainingComponent(service);
     component.trieComponent(this.value);
 
 }
 function filterByContat() {
-    console.log(this.value);
     var service = new trainingService();
     var component = new trainingComponent(service);
     component.filterByContratComponent(this.value);
 
 }
 function filterBySociety() {
-    console.log(this.value);
     var service = new trainingService();
     var component = new trainingComponent(service);
     component.filterBySocietyComponent(this.value);

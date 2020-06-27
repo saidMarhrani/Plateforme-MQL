@@ -1,5 +1,5 @@
-function trainingComponent(service)
-{
+function trainingComponent(service){
+
     this.service = service;
     this.container = document.getElementById("training")
 
@@ -34,8 +34,8 @@ trainingComponent.prototype.buildElement = function (name,className,content,attr
     // }
     return element;
 };
-trainingComponent.prototype.buildSelectElement = function(classNameDiv,selectClassName,...options)
-{
+trainingComponent.prototype.buildSelectElement = function(classNameDiv,selectClassName,...options){
+
     var divSelectElement = this.buildElement("div",classNameDiv);
     var selectElement = this.buildElement("select",selectClassName);
     for(var i in options)
@@ -49,8 +49,8 @@ trainingComponent.prototype.buildSelectElement = function(classNameDiv,selectCla
     divSelectElement.appendChild(selectElement);
     return divSelectElement;
 };
-trainingComponent.prototype.buildSerachCity = function()
-{
+trainingComponent.prototype.buildSerachCity = function(){
+
     var divSearchCity = this.buildElement("div","search-city");
     var pElement = this.buildElement("p",undefined,"Où",["id"],["where"]);
     var pElement2 = this.buildElement("p",undefined,"Ville ou région",["id"],["city"]);
@@ -161,20 +161,20 @@ trainingComponent.prototype.buildAll = function () {
     this.container.appendChild(all);
 }
 trainingComponent.prototype.trieComponent = function(trie){
-    console.log("dddd"+trie);
+
     this.service.trier(trie);
     this.updateTrainings();
 }
 trainingComponent.prototype.updateTrainings = function () {
     var divElement = document.getElementsByClassName("all")[0];
-    console.log(divElement);
+
     if(divElement!==undefined)
     {
-        console.log("ccccc");
+
         divElement.remove();
         this.buildAll();
     }
-    //this.buildAll();
+
 }
 trainingComponent.prototype.filterByContratComponent = function (contraType) {
     this.service.filterByContrat(contraType);

@@ -4,8 +4,8 @@ function PartenaireComponent(service) {
     console.log(this.body);
 }
 
-PartenaireComponent.prototype.get=function(className)
-{
+PartenaireComponent.prototype.get=function(className){
+
     return document.getElementsByClassName(className)[0];
 }
 
@@ -31,8 +31,8 @@ PartenaireComponent.prototype.buildElement = function (name,className,src,conten
     return element;
 
 }
-PartenaireComponent.prototype.buildCardStructure = function()
-{
+PartenaireComponent.prototype.buildCardStructure = function(){
+
     var card =  this.buildElement("div","societe container");
     this.body.appendChild(card);
     return card;
@@ -55,8 +55,8 @@ PartenaireComponent.prototype.buildCardHead = function (imageUrl,desc,number) {
 
     return headDiv;
 }
-PartenaireComponent.prototype.buildStaticDiv = function(staticNumber,staticName)
-{
+PartenaireComponent.prototype.buildStaticDiv = function(staticNumber,staticName){
+
     var pNumber
     var staticImage = "../icons/addon.png";
     if(staticName=="chiffre d'affaire")
