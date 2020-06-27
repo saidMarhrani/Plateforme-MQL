@@ -7,7 +7,7 @@ var eventDB=[
     },
     {
         name : "Session de recrutement Umanis",
-        image : "umanist2.jpg",
+        image : "umanis2.jpg",
         cat : "Tests Techniques",
         date:new Date(2020,11,22)
     },
@@ -43,31 +43,31 @@ var eventDB=[
         date:new Date(2020,2,15)
     },
     {
-        name : "Soutenance de stage de promo 2016",
+        name : "Soutenance de stage - 2016",
         image : "soutenance2016.jpg",
         cat : "Soutenance",
         date:new Date(2016,6,20)
     },
     {
-        name : "Soutenance de stage de promo 2017",
+        name : "Soutenance de stage - 2017",
         image : "soutenance2017.JPG",
         cat : "Soutenance",
         date:new Date(2017,6,20)
     },
     {
-        name : "Remise des diplomes du promo 2017",
+        name : "Remise de diplomes - 2017",
         image : "diplome2017.JPG",
         cat : "Remise des diplomes",
         date:new Date(2018,4,20)
     },
     {
-        name : "Soutenance de stage de promo 2018",
+        name : "Soutenance de stage - 2018",
         image : "soutenance2018.JPG",
         cat : "Soutenance",
         date:new Date(2017,6,20)
     },
     {
-        name : "Remise des diplomes du promo 2018",
+        name : "Remise de diplomes - 2018",
         image : "diplome2018.JPG",
         cat : "Remise des diplomes",
         date:new Date(2019,3,15)

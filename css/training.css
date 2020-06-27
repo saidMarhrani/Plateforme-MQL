@@ -1,7 +1,4 @@
 
-/*.container{*/
-/*    margin: 0px 100px 30px 100px;*/
-/*}*/
 #training{
     background-color: white;
     padding-top: 8%;
@@ -266,10 +263,6 @@
 }
 
 @media (max-width: 1100px) {
-
-    /*.container{*/
-    /*    margin: 0px 20px 30px 50px;*/
-    /*}*/
     
     .trainings > p{
         font-size: 12px;
@@ -339,7 +332,6 @@
 
     .trainings{
         display: block;
-        /* position: absolute; */
         width: 100%;
     }
 
@@ -347,9 +339,7 @@
         display: block;
         float: left;
         left: 0%;
-        /* background-color: red; */
         width: 100%;
-        /* margin-left: 30px !important; */
     }
     
     .trainings > p{
@@ -374,12 +364,7 @@
     .training-date{
         font-size: 12px;
     }
-    
-    .recieve-emails{
-        /* display: block; */
-        /* margin-top: 8%;         */
-    }
-    
+
     .recieve-emails > p {
         font-size: 12px;
         padding-bottom: 10px;
@@ -398,9 +383,7 @@
     }
     
     .validate-btn{
-        /* margin-bottom: 10px;    */
         font-size: 12px;
-        /* padding: 0px 16px !important; */
     }
 
     .email-dialog-alert {

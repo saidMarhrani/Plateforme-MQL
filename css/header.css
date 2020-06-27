@@ -31,7 +31,6 @@
     background-color: white!important;
     position: fixed;
     z-index: 1;
-    /*padding-left: 120px;*/
     font-size: 20px;
     width: 90%;
     height: 80px;
@@ -162,7 +161,6 @@
     body .bar-menu ul{
         position: absolute;
         width: 90%;
-        /* height: 40vh; */
         margin-left: 5%;
         background: #2c3e50;
         top: 80px;
@@ -203,10 +201,6 @@
         margin-left: 35%;
         margin-top: 2%;
     }
-    /*a:hover,a.active{*/
-    /*    background: none;*/
-    /*    color: #0082e6;*/
-    /*}*/
     #li-lang{
         float: left;
         left: 37%;
@@ -218,7 +212,14 @@
     #check:checked ~ ul{
         left: 0;
     }
-
-
 }
 
+
+@media only screen and (max-width: 550px) {
+    .bar-menu > .logo > img{
+        position: relative;
+        float: left;
+        top: -10%;
+        left: 10%;
+    }
+}

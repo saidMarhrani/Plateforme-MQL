@@ -29,6 +29,7 @@
     font-size: 32px;
     margin-bottom: 40px;
     width: 100%;
+    color: rgb(42, 78, 124);
     border-bottom: 1px solid #eee;
 }
 
@@ -37,12 +38,12 @@
     display: block;
     width: 10%;
     padding-bottom:5px;
-    border-bottom: 3px solid #0576a3; 
+    border-bottom: 3px solid #366070; 
 }
 
 .activity{
     display: inline-block;
-    width: 260px;
+    width: 300px;
     margin-right: 30px;
     padding: 10px 30px;
     background-color: white;
@@ -72,7 +73,6 @@
     color: #4f4e4e;
     font-weight: normal;
     line-height: 1.5;
-    /*width: 70%;*/
 }
 
 .activity-date{
@@ -87,17 +87,16 @@
 .rate{
     position: relative;
     float: right;
-    /*right: 20px;*/
 }
 
-.download > button{
+.download > a > button{
     border: 0px;
     background: #0576a3;
     color: white;
     padding: 10px 30px;
 }
 
-.download > button:hover{
+.download > a > button:hover{
     background: rgb(5, 118, 163 , 0.91);
 }
 @media (max-width: 1021px) {
@@ -113,6 +112,22 @@
     .background-reader{
         margin-top: 10%;
     }
+    
+    .background-reader > p{
+        width: 100%;
+        padding-top: 30% !important;
+        font-size: 24px;
+    }
+        
+    .activities > p{
+        font-size: 20px;
+    }
+
+    .activities > p::after {
+        content: "";
+        display: block;
+        width: 25%;
+    }
 }
 @media (max-width: 400px){
     .language{
@@ -121,5 +136,21 @@
     }
     .background-reader{
         margin-top: 15%;
+    }
+
+    .background-reader > p{
+        width: 90%;
+        padding-top: 30% !important;
+        font-size: 24px;
+    }
+        
+    .activities > p{
+        font-size: 20px;
+    }
+
+    .activities > p::after {
+        content: "";
+        display: block;
+        width: 25%;
     }
 }
